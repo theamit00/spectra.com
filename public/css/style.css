@@ -27,6 +27,10 @@ p{
     width: 100%;
 }
 
+/* .col-6{
+    max-width: 580px !important;
+} */
+
 .custom-border{
     border: 1.5px solid rgb(5, 5, 5);
     border-radius: 24px;
@@ -49,10 +53,23 @@ a{
     color: rgba(40, 41, 42, 1);
 }
 img{
+    border-radius: inherit;
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+video{
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.gap-6{
+    gap: 6px;
 }
 
 .gap-12{
@@ -96,6 +113,7 @@ img{
     letter-spacing: -0.18px;
     border: 1px solid rgb(5, 5, 5);
     border-radius: 999px;
+    background-color: #fff;
 }
 
 .btn:hover{
@@ -359,14 +377,15 @@ img{
     color: #fa6317;
 }
 
-.company-section .head .learn-more{
+.learn-more{
+    display: block;
     font-size: 14px;
     font-family: "Space Grotesk", sans-serif;
     font-weight: 500;
     font-optical-sizing: auto;
     font-style: normal;
     letter-spacing: -.18px;
-    gap: 14px;
+    gap: 10px;
     padding: 8px 12px 8px 16px;
 }
 
@@ -454,7 +473,6 @@ img{
 
 .content-section .right-section{
     height: 100%;
-    min-height: 408px;
 }
 
 .content-section .pattern{
@@ -559,7 +577,94 @@ img{
     right: 0;
 }
 
+/* contetnt section second */
 
+.text h6{
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.26px;
+}
+
+.content-section .sub-content{
+    max-width: 384px;
+    width: 100%;
+}
+
+.content-section .sub-content .workbox-image{
+    width: 40px;
+    height: 40px;
+}
+.content-section .sub-content .workbox-image .image-wrapper{
+    width: 24px;
+    height: 24px;
+}
+
+.content-section .learn-more {
+    width: max-content;
+}
+.content-section .learn-more i {
+    width: 24px;
+}
+
+.video-container{
+    height: 428px;
+    /* min-width: 592px; */
+    width: 592px;
+}
+
+.video-container .play-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 16px 24px 16px 16px;
+}
+
+.video-container .play-btn p{
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 24px;
+    font-optical-sizing: auto;
+}
+
+.video-container .play-btn .icon-wrapper{
+    width: 40px;
+    height: 40px;
+}
+.video-container .play-btn .icon-wrapper .play-icon{
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #fa6317;
+    font-size: 10px;
+}
+
+.video-footnote{
+    gap: 8px;
+}
+
+.video-footnote .icon-wrapper{
+    width: 24px;
+    height: 24px;
+}
+.video-footnote .icon-wrapper .icon{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #898b90;
+    font-size: 8px;
+}
+
+.video-footnote p {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.09px;
+}
+
+/* analytics section */
 
 @keyframes rotate {
     
