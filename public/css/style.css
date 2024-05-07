@@ -695,9 +695,9 @@ video{
     border-radius: 24px;
 }
 
-.analytics-section .foot-content .content-wrapper{
+/* .analytics-section .foot-content .content-wrapper{ */
     /* padding-right: 60px; */
-}
+/* } */
 
 .analytics-section .foot-content .card{
     padding: 72px;
@@ -712,10 +712,10 @@ video{
     border-radius: inherit;
 }
 
-.analytics-section .right{
+/* .analytics-section .right{ */
     /* width: max-content; */
     /* height: min-content; */
-}
+/* } */
 
 
 
@@ -723,8 +723,8 @@ video{
     padding-left: 64px;
 }
 
-.analytics-section .images{
-}
+/* .analytics-section .images{
+} */
 
 
 .analytics-section .frames {
