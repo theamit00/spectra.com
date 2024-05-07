@@ -90,6 +90,10 @@ video{
     gap:40px;
 }
 
+.gap-48{
+    gap: 48px;
+}
+
 .gap-56{
     gap: 56px;
 }
@@ -426,6 +430,7 @@ video{
   font-style: normal;
   font-size: 1.4rem;
   color: #fa6317;
+  text-transform: uppercase;
   margin: 0px;
   letter-spacing: 1px;
 }
@@ -515,46 +520,46 @@ video{
     letter-spacing: -0.89px;
 }
 
-.features-section .card-container{
+ .card-container{
     height: min-content;
 }
 
-.features-section .card{
+ .card{
     padding: 48px 40px;
     background-color: rgb(248, 246, 242);
     height: 440px;
 }
 
-.features-section .card .pattern{
+ .card .pattern{
     width: 62px;
     height: 62px;
     border-radius: 50%;
 }
-.features-section .card .pattern .icon{
+ .card .pattern .icon{
     width: 28px;
     height: 28px;
 }
 
-.features-section .card .heading{
+ .card .heading{
     font-size: 24px;
     line-height: 32px;
     letter-spacing: -0.47px;
 }
-.features-section .card .description{
+ .card .description{
     line-height: 32px;
     letter-spacing: -0.18px;
 }
 
-.features-section .checkpoints .points{
+ .checkpoints .points{
     gap: 6px;
 }
 
-.features-section .checkpoints .icon-wrapper{
+ .checkpoints .icon-wrapper{
     width: 24px;
     height: 24px;
 }
 
-.features-section .checkpoints .icon-wrapper .icon{
+ .checkpoints .icon-wrapper .icon{
     width: 17px;
     height : 17px;
     background: #fa6317;
@@ -563,18 +568,21 @@ video{
     border-radius: 50%;
 }
 
-.features-section .checkpoints p{
+ .checkpoints p{
     font-size: 1.4rem;
     letter-spacing: -0.09px;
     line-height: 24px;
 }
 
-.features-section .background-image{
+ .background-image{
     position: absolute;
-    height: 440px;
-    width: 420px;
     top: 0;
     right: 0;
+}
+
+.features-section .background-image{
+    height: 440px;
+    width: 420px;
 }
 
 /* contetnt section second */
@@ -599,10 +607,10 @@ video{
     height: 24px;
 }
 
-.content-section .learn-more {
+.learn-more {
     width: max-content;
 }
-.content-section .learn-more i {
+.learn-more i {
     width: 24px;
 }
 
@@ -665,6 +673,66 @@ video{
 }
 
 /* analytics section */
+
+.analytics-section .head-content{
+    max-width: 656px;
+    width: 100%;
+}
+
+.analytics-section .background-big-image{
+    top: 0;
+    max-width: 1440px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 721px;
+    width: 100%;
+    z-index: -10;
+}
+
+.analytics-section .foot-content{
+    width: 1072px;
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+.analytics-section .foot-content .content-wrapper{
+    /* padding-right: 60px; */
+}
+
+.analytics-section .foot-content .card{
+    padding: 72px;
+    height: min-content;
+    box-shadow: none;
+}
+
+.analytics-section .foot-content .background-image{
+    height: max-content;
+    overflow: hidden;
+    z-index: 0;
+    border-radius: inherit;
+}
+
+.analytics-section .right{
+    /* width: max-content; */
+    /* height: min-content; */
+}
+
+
+
+.analytics-section .image-wrap{
+    padding-left: 64px;
+}
+
+.analytics-section .images{
+}
+
+
+.analytics-section .frames {
+    position: absolute;
+    width: 304px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 @keyframes rotate {
     
