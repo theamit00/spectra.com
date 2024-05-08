@@ -42,3 +42,36 @@ navbarCross.addEventListener('click',()=>{
     loginButton.classList.remove('d-block')
     loginButton.classList.add('d-none')
 })
+
+// statements for Analytics section carousel
+
+const frames = Array.from(document.querySelectorAll('.analytics-section .frames'));
+const frame2 = document.querySelector('.analytics-section #frame-2');
+const frame3 = document.querySelector('.analytics-section #frame-3');
+
+const detailContents = Array.from(document.querySelectorAll('.foot-feature-detail .detail-content'));
+const scroller = document.querySelector('.foot-feature-detail .scroll-bar .scroller');
+
+detailContents.forEach((detailContent)=>{
+    detailContent.addEventListener('click',()=>{
+        const frame = detailContent.dataset.frame;
+        if(frame === 'frame-1'){
+            scroller.style.translate = '0%';
+            frame2.style.left = '336px'
+            frame3.style.left = '672px'
+        }
+
+        if(frame === 'frame-2'){
+            scroller.style.translate = '100%';
+            frame2.style.left = '24px'
+            frame3.style.left = '360px'
+        }
+
+        if(frame === 'frame-3'){
+            scroller.style.translate = '200%';
+            frame2.style.left = '24px'
+            frame3.style.left = '48px'
+        }
+
+    })
+})

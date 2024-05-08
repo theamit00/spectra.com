@@ -72,6 +72,10 @@ video{
     gap: 6px;
 }
 
+.gap-8{
+    gap: 8px;
+}
+
 .gap-12{
     gap: 12px;
 }
@@ -109,15 +113,24 @@ video{
 }
 
 .btn{
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
     font-size: 1.4rem;
-    padding: 4px 16px;
-    line-height: 30px;
+    padding: 12px 16px 12px 20px;
+    line-height: 24px;
     box-shadow: rgb(5, 5, 5) 0px 2px 0px 0px;
     text-align: center;
     letter-spacing: -0.18px;
     border: 1px solid rgb(5, 5, 5);
+    width: fit-content;
     border-radius: 999px;
     background-color: #fff;
+}
+
+.btn i{
+    width: 24px;
 }
 
 .btn:hover{
@@ -146,7 +159,7 @@ video{
     background-color: #fff;
     width: 100%;
     transition: 0.3s all ease-in-out;
-    z-index: 1;
+    z-index: 999;
 }
 
 .navbar-section .logo-section{
@@ -258,6 +271,22 @@ video{
     animation-duration: 5s;
     animation-iteration-count: infinite;
     overflow: hidden;
+}
+
+@keyframes rotate {
+    
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+
 }
 
 .hero-section .hero-content .hero-content-description{
@@ -464,11 +493,11 @@ video{
     width: 26px;
 }
 
-.workbox h4{
+.workbox h3{
     font-size: 40px;
 }
 
-.workbox h4 > span{
+.workbox h3 > span{
     color: #fa6317;
 }
 
@@ -512,9 +541,9 @@ video{
     top: 166px;
 }
 
-/* features section */
+/* core features section */
 
-.features-section .heading{
+.core-features-section .heading{
     font-size: 4rem;
     line-height: 48px;
     letter-spacing: -0.89px;
@@ -580,7 +609,7 @@ video{
     right: 0;
 }
 
-.features-section .background-image{
+.core-features-section .background-image{
     height: 440px;
     width: 420px;
 }
@@ -679,6 +708,11 @@ video{
     width: 100%;
 }
 
+.analytics-section .checkpoints p{
+    font-size: 16px;
+    line-height: 32px;
+}
+
 .analytics-section .background-big-image{
     top: 0;
     max-width: 1440px;
@@ -695,14 +729,23 @@ video{
     border-radius: 24px;
 }
 
-/* .analytics-section .foot-content .content-wrapper{ */
-    /* padding-right: 60px; */
-/* } */
+.analytics-section .foot-content .content-wrapper{
+    z-index: 1;
+}
 
 .analytics-section .foot-content .card{
     padding: 72px;
     height: min-content;
     box-shadow: none;
+}
+
+.analytics-section .foot-content .btn{
+    gap: 4px;
+}
+
+.analytics-section .foot-content .card .heading{
+    font-size: 4rem;
+    line-height: 48px;
 }
 
 .analytics-section .foot-content .background-image{
@@ -712,42 +755,78 @@ video{
     border-radius: inherit;
 }
 
-/* .analytics-section .right{ */
-    /* width: max-content; */
-    /* height: min-content; */
-/* } */
-
-
-
 .analytics-section .image-wrap{
-    padding-left: 64px;
+    padding-left: 80px;
+    z-index: 1;
 }
-
-/* .analytics-section .images{
-} */
-
 
 .analytics-section .frames {
     position: absolute;
     width: 304px;
     top: 50%;
     transform: translateY(-50%);
+    transition: 0.5s all ease-in-out;
 }
 
-@keyframes rotate {
-    
-    0% {
-        transform: rotate(0deg);
-    }
+.analytics-section .frames#frame-2{
+    left: 336px;
+}
 
-    50% {
-        transform: rotate(360deg);
-    }
+.analytics-section .frames#frame-3{
+    left: 672px;
+}
 
-    100% {
-        transform: rotate(0deg);
-    }
+.analytics-section .foot-feature-detail .scroll-bar{
+    height: 4px;
+    background-color: rgb(232, 227, 215);
+}
 
+.foot-feature-detail .scroll-bar .scroller{
+    height: inherit;
+    background-color: rgba(250, 99, 23, 1);
+    translate: 0%;
+    transition: all 0.5s ease-in-out;
+}
+
+.foot-feature-detail .detail-content{
+    cursor: pointer;
+}
+
+.foot-feature-detail .detail-content .title{
+    font-size: 2.4rem;
+    line-height: 32px;
+    letter-spacing: -0.47px;
+}
+
+
+/* Features section */
+.features-section{
+    padding: 96px 24px;
+}
+
+.features-section .left-section .content-wrapper{
+    max-width: 488px;
+}
+
+.features-section .right-section-wrapper {
+    height: 308px;
+    border-radius: 20px;
+    background-color: #fff;
+    width: 100%
+}
+
+.stats-container .stats-wrapper{
+    padding: 36px;
+    border-radius: 12px;
+    background-color: rgb(248, 246, 242);
+    flex: 1 0 0px;
+}
+
+.stats-container .stats-wrapper p{
+    font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 @media (min-width : 1200px) {
