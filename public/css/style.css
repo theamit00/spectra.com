@@ -17,8 +17,10 @@ p{
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
+  font-variation-settings:"slnt" 0;
+  font-size: 16px;
+  letter-spacing: -0.18px;
+  line-height: 32px;
 }
 
 .container{
@@ -100,6 +102,14 @@ video{
 
 .gap-56{
     gap: 56px;
+}
+
+.gap-124{
+    gap: 124px;
+}
+
+.gap-140{
+    gap:140px
 }
 
 .full-width{
@@ -420,6 +430,8 @@ video{
     letter-spacing: -.18px;
     gap: 10px;
     padding: 8px 12px 8px 16px;
+    width: max-content;
+    height: min-content;
 }
 
 .company-section .company-images{
@@ -637,7 +649,7 @@ video{
 }
 
 .learn-more {
-    width: max-content;
+    
 }
 .learn-more i {
     width: 24px;
@@ -828,6 +840,121 @@ video{
   font-weight: 500;
   font-style: normal;
 }
+
+.feature-container .feature .title{
+    font-size: 1.8rem;
+    line-height: 21.6px;
+    letter-spacing: -0.26px;
+}
+
+.feature-container .feature .description{
+    font-size: 1.4rem;
+    line-height: 24px;
+    letter-spacing: -0.09px;
+    font-weight: 400;
+}
+
+.feature-container .feature-svg{
+    width: 48px;
+    height: 48px;
+}
+
+/* Review section */
+
+.review-section{
+    padding: 96px 0px;
+    overflow: hidden;
+}
+
+.review-section .container{
+    width: 1056px;
+    padding: 0px 24px;
+}
+
+.review-section .heading{
+    flex: 1;
+}
+
+.review-section .foot .outer-image-wrapper {
+    background: none;
+    width: 148px;
+    height: 72px;
+    padding: 0px;
+    flex: none;
+}
+
+.review-section .foot .outer-image-wrapper .inner-image-wrapper{
+    width: fit-content;
+    height: fit-content;
+}
+
+.review-section .logo-image-wrapper{
+    width: 168px;
+    height: min-content;
+    display: flex;
+}
+
+.stars .star{
+    width: 24px;
+    height: 24px;
+    display: flex;
+}
+
+.marquee {
+    display: flex;
+    /* overflow: hidden; */
+    gap: 32px;
+    /* whatever you want but match it */
+    position: relative;
+    user-select: none;
+}
+
+.marquee-content {
+    flex-shrink: 0;
+    display: flex;
+    gap: 32px;
+}
+
+.marquee-content p{
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.09px;
+}
+
+.marquee-content-box{
+    background-color: #fff;
+    padding: 24px;
+    width: 312px;
+}
+
+.marquee-content-box .line{
+    height: 1px;
+    background-color: rgb(234, 234, 235);
+    width: 100%;
+}
+
+.marquee-content-box .reviewer-name p{
+    font-weight: 500;
+    color: rgb(5, 5, 5);
+}
+
+.marquee-content-box .reviewer-designation p{
+    color: rgba(5, 5, 5, 0.48);
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 1rem)); /* match 1 rem to gap above */
+  }
+}
+
+.scroll {
+  animation: scroll 10s linear infinite;
+}
+
 
 @media (min-width : 1200px) {
 
