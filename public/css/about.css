@@ -1,0 +1,87 @@
+/* hero section */
+
+.about-hero-section .play-btn{
+    padding: unset;
+    width: 72px;
+    height: 72px;
+}
+
+/* about review section */
+
+.about-review-section{
+    padding: 24px;
+    background-color: #fff;
+}
+
+.about-review-section .marquee {
+    flex: 1;
+    gap: 64px;
+    overflow: hidden;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
+}
+
+.about-review-section .marquee-content {
+    gap: 64px;
+}
+
+.about-review-section .head{
+    width: 280px;
+}
+
+.about-review-section .title h6{
+    font-size: 18px;
+}
+
+/* about-stats-section */
+
+.about-stats-section .btn{
+    padding: 12px 16px 12px 20px;
+}
+
+
+@keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - 64px)); /* match 1 rem to gap above */
+    }
+  }
+  
+  .scroll {
+    animation: scroll 10s linear infinite;
+  }
+
+@media (min-width : 1200px) {
+
+    .navbar-section {
+        position: absolute;
+        width: 100%;
+        top: .8rem;
+    }
+
+    .full-width{
+        width: fit-content;
+    }
+
+    .navbar-section .menu{
+        gap: 1.2rem;
+        margin: 0;
+        width: fit-content;
+        overflow: visible;  
+    }
+
+    /* hero section */
+
+    .about-hero-section{
+        padding: 192px 24px 80px;
+    }
+
+    .about-hero-section .hero-content-header h1{
+        font-size: 6.4rem;
+    }
+
+    .about-hero-section .hero-content-header .rotate-pattern{
+        left: 332px;
+    }
+}

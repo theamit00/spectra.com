@@ -112,6 +112,10 @@ video{
     gap: 124px;
 }
 
+.gap-136{
+    gap: 136px;
+}
+
 .gap-140{
     gap:140px
 }
@@ -284,7 +288,7 @@ video{
     color: #050505;
 }
 
-.hero-section .hero-content-header .pattern{
+.rotate-pattern{
     bottom: 0;
     right: 0;
     width: 64px;
@@ -930,7 +934,7 @@ video{
     width: 312px;
 }
 
-.marquee-content-box .line{
+.line{
     height: 1px;
     background-color: rgb(234, 234, 235);
     width: 100%;
@@ -1042,11 +1046,11 @@ video{
     text-align: center;
 }
 
-.form-section .form input{
+.form input{
     flex: 1;
 }
 
-.form-section .form input, .form-section .form button {
+.form input,.form button {
     font-size: 14px;
     line-height: 24px;
     padding:16px 24px;
@@ -1147,6 +1151,108 @@ video{
     letter-spacing: -0.18px;
 }
 
+/* Footer Section */
+
+.footer-section{
+    padding: 112px 24px 64px;
+}
+
+.footer-section .head .left{
+    max-width: 384px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-section .logo{
+    display: block;
+    width: 158px;
+    height: 40px;
+}
+
+.footer-section p{
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.09px;
+}
+
+.footer-section .middle .left{
+    display: flex;
+    flex: 1;
+}
+
+.footer-section .social-icons{
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+}
+
+.social-icons .icon-wrapper{
+    width: 24px;
+    height: 24px;
+}
+
+.footer-section .custom-border{
+    border-radius: 6px;
+}
+
+.footer-section .foot p > span {
+    font-weight: 500;
+}
+
+.footer-section .links{
+    flex: 1;
+}
+
+.footer-section ul li:first-of-type{
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.footer-section ul li a{
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.09px;
+}
+
+.footer-section .middle .right{
+    width: 416px;
+}
+
+.footer-section .form p{
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.footer-section form{
+    width: 100%;
+    flex: 1;
+    max-width: none;
+}
+
+.footer-section form input {
+    padding-right: 152px;
+}
+
+.footer-section form .form-btn{
+    padding-block: 0px;
+    line-height: 24px;
+    border: none;
+    box-shadow: none;
+    top: 4px;
+    right: 4px;
+    bottom: 4px;
+}
+
 
 @media (min-width : 1200px) {
 
@@ -1177,7 +1283,7 @@ video{
         font-size: 6.4rem;
     }
 
-    .hero-section .hero-content-header .pattern{
+    .hero-section .hero-content-header .rotate-pattern{
         left: 388px;
     }
 }
