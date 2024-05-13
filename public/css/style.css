@@ -608,6 +608,11 @@ video{
     letter-spacing: -0.18px;
 }
 
+.card .social_icon{
+    width: 24px;
+    height: 24px;
+}
+
  .checkpoints .points{
     gap: 6px;
 }
@@ -1113,6 +1118,8 @@ video{
     width: 108px;
     height: 108px;
     border-radius: 50%;
+    background: #fff;
+    z-index: 1;
 }
 
 .avatar-info{

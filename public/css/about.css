@@ -141,6 +141,7 @@ section {
     font-size: 18px;
     line-height: 21.6px;
     letter-spacing: -0.26px;
+    color: #050505;
 }
 
 .about_company_values_section .card p{
@@ -190,17 +191,64 @@ section {
     font-size: 64px;
     line-height: 72px;
     letter-spacing: -1.61px;
+    color: #050505;
 }
 
 .our_culture_section .card h1>span{
     color: #fa6317;
 }
 
-/* .our_culture_section .card p{
+/* about_team_section */
+
+.about_team_section{
+    padding: 80px 24px;
+    overflow: hidden;
+}
+
+.about_team_section .head .description p{
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: -0.33px;
+}
+
+.about_team_section .card-container{
+    padding-bottom: 40px;
+}
+
+.about_team_section .card{
+    background-color: #fff;
+    padding: 24px;
+}
+
+.about_team_section .card h6{
+    font-size: 18px;
+    line-height: 21.6px;
+    letter-spacing: -0.26px;
+    color: #050505;
+}
+
+.about_team_section .user_details p{
     font-size: 14px;
     line-height: 24px;
     letter-spacing: -0.09px;
-} */
+}
+
+.about_team_section .card .description p{
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: -0.18px;
+    color: #050505;
+}
+
+.about_team_section .avatar-wrap{
+    top:0;
+    transform: translateY(-50%);
+}
+
+.about_team_section .avatar{
+    width: 72px;
+    height: 72px;
+}
 
 
 @keyframes scroll {
