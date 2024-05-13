@@ -1,3 +1,12 @@
+.card{
+    height: fit-content;
+}
+
+section {
+    padding: 80px 24px;
+
+}
+
 /* hero section */
 
 .about-hero-section .play-btn{
@@ -37,6 +46,161 @@
 .about-stats-section .btn{
     padding: 12px 16px 12px 20px;
 }
+
+.about-stats-section .card{
+    height: fit-content;
+}
+
+.about-stats-section .card .heading{
+    font-size: 64px;
+    line-height: 72px;
+    letter-spacing: -1.61px;
+}
+
+.about-stats-section .card .heading>span{
+    color: #fa6317;
+}
+
+.about-stats-section .card .subheading{
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+/* about content section */
+
+.about_content_section{
+    padding: 80px 24px;
+}
+
+.about_content_section .container{
+    max-width: 1008px;
+}
+
+.about_content_section .heading h3{
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.89px;
+}
+
+.about_content_section .shape{
+    width: 20px;
+    height: 20px;
+}
+
+.about_content_section .user{
+    width: max-content;
+    height: 320px;
+}
+
+.about_content_section .avatar{
+    width: 88px;
+    height: 88px;
+}
+
+.about_content_section .user_details h5{
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.47px;
+}
+
+.about_content_section .user .sign{
+    width: 216px;
+    height: 48px;
+}
+
+.about_content_section .text p{
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: -0.33px;
+}
+
+/* about company values section */
+
+.about_company_values_section{
+    padding: 80px 24px;
+    overflow: hidden;
+}
+
+.about_company_values_section .head-content{
+    max-width: 570px;
+}
+
+.about_company_values_section .card{
+    background: #fff;
+    border: none;
+    padding: 32px;
+}
+
+.about_company_values_section .card h6{
+    font-size: 18px;
+    line-height: 21.6px;
+    letter-spacing: -0.26px;
+}
+
+.about_company_values_section .card p{
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.09px;
+}
+
+.about_company_values_section .background-big-image{
+    top: 0;
+    left: 0;
+    max-width: none;
+    transform: none;
+    width: 100%;
+}
+
+/* our culture section */
+
+.our_culture_section .heading{
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.69px;
+}
+
+.our_culture_section .video-container{
+    height: 384px;
+    width: 100%;
+}
+
+.our_culture_section .subheading{
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.47px;
+}
+
+.our_culture_section .left-section .content-wrapper{
+    height: 496px;
+}
+
+.our_culture_section .card{
+    background: #fff;
+    border: none;
+    padding: 0px;  
+}
+
+.our_culture_section .card h1{
+    font-size: 64px;
+    line-height: 72px;
+    letter-spacing: -1.61px;
+}
+
+.our_culture_section .card h1>span{
+    color: #fa6317;
+}
+
+/* .our_culture_section .card p{
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.09px;
+} */
 
 
 @keyframes scroll {
