@@ -1,0 +1,10 @@
+[data-aos="tilt-left"] {
+    scale: 0.8;
+    opacity: 0;
+    transition-property: transform,opacity,scale;
+}
+[data-aos="tilt-left"].aos-animate {
+    scale: 1;
+    opacity: 1;
+    transform: rotate(-8deg);
+}

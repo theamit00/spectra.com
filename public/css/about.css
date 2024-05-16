@@ -24,13 +24,13 @@ section {
 
 .about-review-section .marquee {
     flex: 1;
-    gap: 64px;
+    gap: 32px;
     overflow: hidden;
     mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
 }
 
 .about-review-section .marquee-content {
-    gap: 64px;
+    gap: 32px;
 }
 
 .about-review-section .head{
@@ -160,6 +160,10 @@ section {
 
 /* our culture section */
 
+.our_culture_section .container{
+    max-width: 1074px;
+}
+
 .our_culture_section .heading{
     font-size: 32px;
     line-height: 40px;
@@ -250,19 +254,160 @@ section {
     height: 72px;
 }
 
+/* faq section */
 
-@keyframes scroll {
+.about-faq-section .head-content{
+    max-width: none;
+}
+
+.about-faq-section .head-content .description{
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: -0.33px;
+}
+
+.about-faq-section .foot{
+    overflow-x: clip;
+}
+
+.tab_container{
+    padding: 4px;
+    background-color: #fff;
+    border-radius: 999px;
+    box-shadow: rgba(5, 5, 5, 0.04) 0px 8px 32px 0px, rgb(244, 241, 235) 0px 0px 0px 1px;    
+}
+
+.tab_container .tab{
+    padding: 8px 32px;
+    border-radius: 999px;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.35s ease-in-out;
+}
+
+.tab_container .tab>span{
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.18px;
+}
+
+.tab_container .icon{
+    height: 24px;
+    width: 24px;
+}
+
+.tab.active_tab{
+    background: rgb(248,246,242);
+    opacity: 1;
+}
+
+.faq_container{
+    width: 520px;
+    background: #fff;
+    transition: all 0.4s ease-in-out;
+}
+
+.faq_container .custom-border{
+    border-radius: 12px;
+}
+
+.faq_container .faq{
+    padding: 16px 24px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.faq_container .faq h6{
+    font-size: 18px;
+    line-height: 21.6px;
+    letter-spacing: -0.26px;
+    color: #050505;
+}
+
+
+
+.faq_container .faq .close_icon{
+    display: none;
+}
+
+.faq_container .faq .answer{
+    display: none;
+}
+
+.faq_container .faq p{
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.09px;
+}
+
+.faq_container .icons{
+    width: 24px;
+    height: 24px;
+}
+
+.faq_container .icons .icon{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+/* .tab.active_tab{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(248,246,242);
+    z-index: -1;
+    top: 0;
+    left: 0;
+    border-radius: 999px;
+    transition: all 0.3s ease-in-out;
+} */
+
+.faq_tab_in{
+    left: 0px;
+    transform: scale(1);
+}
+
+.faq_tab_out{
+    transform: scale(0);
+    left: 100%;
+}
+
+.active_faq{
+    background-color: rgb(248,246,242);
+}
+
+.faq.active_faq .answer{
+    display: block;
+}
+
+.faq.active_faq .open_icon{
+    display: none;
+}
+
+.faq.active_faq .close_icon{
+    display: block;
+}
+
+@keyframes slide_right {
     from {
-      transform: translateX(0);
+        position: relative;
+        left: 0px;
     }
-    to {
-      transform: translateX(calc(-100% - 64px)); /* match 1 rem to gap above */
+    to{
+        left: 100%;
+        position: absolute;
     }
-  }
-  
-  .scroll {
-    animation: scroll 10s linear infinite;
-  }
+}
 
 @media (min-width : 1200px) {
 
