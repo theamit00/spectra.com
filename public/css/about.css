@@ -282,6 +282,7 @@ section {
     border-radius: 999px;
     opacity: 0.8;
     cursor: pointer;
+    background: #fff;
     transition: all 0.35s ease-in-out;
 }
 
@@ -315,10 +316,11 @@ section {
     border-radius: 12px;
 }
 
-.faq_container .faq{
+.faq{
+    gap: 0;
     padding: 16px 24px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .faq_container .faq h6{
@@ -328,20 +330,27 @@ section {
     color: #050505;
 }
 
-
+.faq_container .faq .open_icon{
+    opacity: 1;
+}
 
 .faq_container .faq .close_icon{
-    display: none;
+    opacity: 0;
 }
 
 .faq_container .faq .answer{
-    display: none;
+    display: block;
+    max-height: 0px;
+    height: fit-content;
+    transition: all 0.4s ease-in-out;
 }
 
 .faq_container .faq p{
+    opacity: 0;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: -0.09px;
+    transition: all 0.3s ease-in-out;
 }
 
 .faq_container .icons{
@@ -355,6 +364,7 @@ section {
     position: absolute;
     top: 0;
     left: 0;
+    transition: all 0.4s ease-in-out;
 }
 
 
@@ -384,18 +394,25 @@ section {
 
 .active_faq{
     background-color: rgb(248,246,242);
+    gap: 12px;
 }
 
 .faq.active_faq .answer{
-    display: block;
+    max-height: 48px;
+}
+
+.faq.active_faq .answer > p{
+    opacity: 1;
 }
 
 .faq.active_faq .open_icon{
-    display: none;
+    /* display: none; */
+    opacity: 0;
 }
 
 .faq.active_faq .close_icon{
-    display: block;
+    /* display: block; */
+    opacity: 1;
 }
 
 @keyframes slide_right {
