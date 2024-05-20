@@ -115,70 +115,28 @@ const faqs = Array.from(document.querySelectorAll('.faq_container .faq'));
 const faqTabTracker = {
     currentFaqTab : null,
     prevFaqTab : null,
-    currentAnswer : null,
-    prevAnswer : null,
-    currentOpenIcon : null,
-    currentCloseIcon : null,
-    prevOpenIcon : null,
-    prevCloseIcon : null,
-
 }
 faqs.forEach((faq)=>{
     faq.addEventListener('click',()=>{
-        let answer = faq.querySelector('.faq_container .faq .answer');
-        let openIcon = faq.querySelector('.faq_container .faq .open_icon')
-        let closeIcon = faq.querySelector('.faq_container .faq .close_icon')
-
         faq.classList.add('active_faq');
 
-        // faq.style.background = "rgb(248,246,242)";
-        // answer.style.display = 'flex';
-        // openIcon.style.display = 'none';
-        // closeIcon.style.display = 'block';
-
-
         faqTabTracker.currentFaqTab = faq;
-        // faqTabTracker.currentAnswer = answer;
-        // faqTabTracker.currentOpenIcon = openIcon;
-        // faqTabTracker.currentCloseIcon = closeIcon;
 
         if(faqTabTracker.currentFaqTab === faqTabTracker.prevFaqTab ){
             faq.classList.remove('active_faq');
-        //     faq.style.background = '#fff';
-        //     answer.style.display = 'none';
-        //     openIcon.style.display = 'block';
-        //     closeIcon.style.display = 'none';
 
             faqTabTracker.currentFaqTab = null;
-        //     faqTabTracker.currentAnswer = null;
-        //     faqTabTracker.currentOpenIcon = null;
-        //     faqTabTracker.currentCloseIcon = null;
 
             faqTabTracker.prevFaqTab = null;
-        //     faqTabTracker.prevAnswer = null;
-        //     faqTabTracker.prevOpenIcon = null;
-        //     faqTabTracker.prevCloseIcon = null;
-        //     console.log("current tab closed")
             return;
         }
 
         if(faqTabTracker.prevFaqTab){
             faqTabTracker.prevFaqTab.classList.remove('active_faq');
-        //     faqTabTracker.prevAnswer.style.display = 'none';
-        //     faqTabTracker.prevOpenIcon.style.display = "block";
-        //     faqTabTracker.prevCloseIcon.style.display = 'none';
-
-        //     // console.log("prev tab closed")
         }
 
         
         faqTabTracker.prevFaqTab = faqTabTracker.currentFaqTab;
-        // faqTabTracker.prevAnswer = faqTabTracker.currentAnswer;
-        // faqTabTracker.prevOpenIcon = faqTabTracker.currentOpenIcon;
-        // faqTabTracker.prevCloseIcon = faqTabTracker.currentCloseIcon;
-        // console.log("current tab opened")
         return;
-
-
     })
 })

@@ -108,6 +108,14 @@ video{
     gap: 56px;
 }
 
+.gap-72{
+    gap: 72px;
+}
+
+.gap-80{
+    gap: 80px;
+}
+
 .gap-124{
     gap: 124px;
 }
@@ -1266,6 +1274,10 @@ video{
     right: 4px;
     bottom: 4px;
 }
+
+/* Product page css */
+
+
 
 
 @media (min-width : 1200px) {
