@@ -79,8 +79,9 @@ detailContents.forEach((detailContent)=>{
 // Statements for handling tabs in faq section in about page
 
 const tabs = Array.from(document.querySelectorAll('.tab_container .tab'));
-const faqTab1 = document.querySelector('#faq_tab1');
-const faqTab2 = document.querySelector('#faq_tab2');
+const tab1 = document.querySelector('#faq_tab1');
+const tab2 = document.querySelector('#faq_tab2');
+const back_tab = document.querySelector('.tab_container .tab.back_tab');
 const currentTabTracker = {
     currentAnswer : tabs[0],
 }
@@ -90,21 +91,25 @@ tabs.forEach((tab)=>{
         currentTabTracker.currentAnswer.classList.remove('active_tab');
         tab.classList.add('active_tab');
         currentTabTracker.currentAnswer = tab;
+
         if(currentTabTracker.currentAnswer.dataset.tabname === 'tab2'){
 
-            faqTab1.classList.remove('faq_tab_in');
-            faqTab1.classList.add('faq_tab_out');
+            back_tab.style.left = `${currentTabTracker.currentAnswer.getBoundingClientRect().right - currentTabTracker.currentAnswer.getBoundingClientRect().left}px`;
+            tab1.classList.remove('faq_tab_in');
+            tab1.classList.add('faq_tab_out');
 
-            faqTab2.classList.remove('faq_tab_out');
-            faqTab2.classList.add('faq_tab_in');
+            tab2.classList.remove('faq_tab_out');
+            tab2.classList.add('faq_tab_in');
         }
         else{
 
-            faqTab1.classList.remove('faq_tab_out');
-            faqTab1.classList.add('faq_tab_in');
+            back_tab.style.left = "0px";
+            
+            tab1.classList.remove('faq_tab_out');
+            tab1.classList.add('faq_tab_in');
 
-            faqTab2.classList.remove('faq_tab_in');
-            faqTab2.classList.add('faq_tab_out');
+            tab2.classList.remove('faq_tab_in');
+            tab2.classList.add('faq_tab_out');
         }
     })
 })

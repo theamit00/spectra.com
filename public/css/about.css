@@ -282,8 +282,9 @@ section {
     border-radius: 999px;
     opacity: 0.8;
     cursor: pointer;
-    background: #fff;
-    transition: all 0.35s ease-in-out;
+    /* background: #fff; */
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
 }
 
 .tab_container .tab>span{
@@ -302,8 +303,18 @@ section {
 }
 
 .tab.active_tab{
+    opacity: 1;
+}
+
+.tab.back_tab{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0px;
+    right: 0px; 
     background: rgb(248,246,242);
     opacity: 1;
+    z-index: 0;
 }
 
 .faq_container{
