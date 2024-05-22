@@ -45,6 +45,7 @@
     width: 140px;
     height: 90%;
     top: 32px;
+    z-index: -1;
 }
 
 .left_decor{

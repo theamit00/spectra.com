@@ -1,0 +1,117 @@
+.blog_hero_section .pattern_container{
+    top: 72px;
+    max-width: 1008px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.blog_hero_section .custom-border{
+    box-shadow: 0px 2px 0px 0px;
+}
+
+.blog_hero_section .foot-content{
+    background: #fff;
+    max-width: 1060px;
+}
+
+.blog_hero_section .foot-content .left{
+    padding: 40px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+}
+
+.blog_hero_section .foot-content .right{
+    padding: 32px;
+    border:0px;
+}
+
+.blog_hero_section .foot-content .bottom{
+    padding: 48px;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-left: 0px;
+}
+
+.foot-container{
+    background-color: #fff;
+}
+
+.details .icon{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details .icon i{
+    font-size: 16px;
+    color: #fa6317;
+}
+
+.btn.learn-more{
+    box-shadow: none;
+    border: none;
+}
+
+.btn.learn-more .icon-wrapper{
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fa6317;
+    border-radius: 50%;
+    line-height: 0px;
+}
+
+.btn.learn-more .icon-wrapper .icon {
+    width: 24px;
+    height: 24px;
+}
+
+.blog_hero_section .right_container .image_wrapper{
+    height: 212px;
+    border-radius: 12px;
+}
+.image_wrapper .image{
+    border-radius: inherit;
+}
+
+.blog_hero_section .custom-badge{
+    padding: 16px 24px;
+    border-radius: 8px;
+    background: rgb(248, 246, 242);
+}
+
+.custom-badge .icon{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-badge .icon i{
+    font-size: 14px;
+    color: #fa6317;
+}
+
+/* Blog section */
+
+.blogs_section .blogs_container{
+    max-width: 800px;
+}
+
+.blogs_container .blog{
+    background: #fff;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.blogs_container .blog .mid{
+    max-width: 520px;
+}
