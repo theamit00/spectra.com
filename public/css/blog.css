@@ -50,12 +50,12 @@
     color: #fa6317;
 }
 
-.btn.learn-more{
+.blog_learn_more.learn-more{
     box-shadow: none;
     border: none;
 }
 
-.btn.learn-more .icon-wrapper{
+.blog_learn_more.learn-more .icon-wrapper{
     width: 32px;
     height: 32px;
     padding: 4px;
