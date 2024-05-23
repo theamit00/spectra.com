@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./public/css/about.css">
     <link rel="stylesheet" href="./public/css/product.css">
     <link rel="stylesheet" href="./public/css/blog.css">
+    <link rel="stylesheet" href="./public/css/pricing.css">
 
 </head>
 <body>
@@ -50,6 +51,962 @@
             </div>
         </div>
     </nav>
+
+<!-- Hero section -->
+    <header class="blog_hero_section product_hero_section analytics-section position-relative " >
+        <div class="container position-relative">
+            <div class="wrapper d-flex flex-column justify-content-center gap-48 ">
+                <div class="head d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-shine" data-aos-once="true" >
+                    <div class="head-content d-flex flex-column align-items-center gap-16">
+                        <p class="subtitle text-center" >Our History</p>
+                        <h1 class="heading text-center ">Our Plans Scale With Your Business</h1>
+                    </div>
+                </div>
+                <div class="foot position-relative d-flex flex-column align-items-center gap-24" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-shine" data-aos-delay="500" data-aos-once="true" >
+                    <div class="tab_container d-flex">
+                        <div class="d-flex flex-full position-relative">
+                            <div class="hero_price_tab_controller tab position-relative d-flex gap-6" data-tabname="tab1" >
+                                <div class="icon">
+                                    <img src="public/images/stars_icon.svg" alt="">
+                                </div>
+                                <span class="d-inline-block" >Bill Annually</span>
+                            </div>
+                            <div class="hero_price_tab_controller tab position-relative d-flex gap-6" data-tabname="tab2" >
+                                <div class="icon">
+                                    <img src="public/images/database_icon.svg" alt="">
+                                </div>
+                                <span class="d-inline-block" >Bill Monthly</span>
+                            </div>
+                            <div class="tab hero_price_tab_controller back_tab"></div>
+                        </div>
+                    </div>
+                    <div class="pricing_container d-flex gap-32 position-relative faq_tab_in" >
+                        
+                        <div class="card custom-border position-relative d-flex aos-init aos-animate" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-shine" data-aos-delay="200" data-aos-once="true">
+                            <div class="content-wrapper d-flex flex-column gap-24">
+                                <div class="pattern d-flex">
+                                    <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2026%2026%22%3E%3Cpath%20d%3D%22M%2013%2011.75%20C%2014.658%2011.75%2016.247%2012.409%2017.419%2013.581%20C%2018.591%2014.753%2019.25%2016.342%2019.25%2018%20L%2019.25%2025.5%20L%206.75%2025.5%20L%206.75%2018%20C%206.75%2016.342%207.408%2014.753%208.581%2013.581%20C%209.753%2012.409%2011.342%2011.75%2013%2011.75%20Z%20M%204.61%2015.507%20C%204.411%2016.178%204.294%2016.871%204.26%2017.57%20L%204.25%2018%20L%204.25%2025.5%20L%200.5%2025.5%20L%200.5%2019.875%20C%200.5%2018.797%200.898%2017.757%201.617%2016.954%20C%202.337%2016.151%203.327%2015.642%204.399%2015.525%20L%204.611%2015.507%20Z%20M%2021.39%2015.507%20C%2022.502%2015.575%2023.547%2016.065%2024.311%2016.876%20C%2025.074%2017.688%2025.5%2018.76%2025.5%2019.875%20L%2025.5%2025.5%20L%2021.75%2025.5%20L%2021.75%2018%20C%2021.75%2017.134%2021.625%2016.297%2021.39%2015.507%20Z%20M%204.875%208%20C%205.704%208%206.499%208.329%207.085%208.915%20C%207.671%209.501%208%2010.296%208%2011.125%20C%208%2011.954%207.671%2012.749%207.085%2013.335%20C%206.499%2013.921%205.704%2014.25%204.875%2014.25%20C%204.046%2014.25%203.251%2013.921%202.665%2013.335%20C%202.079%2012.749%201.75%2011.954%201.75%2011.125%20C%201.75%2010.296%202.079%209.501%202.665%208.915%20C%203.251%208.329%204.046%208%204.875%208%20Z%20M%2021.125%208%20C%2021.954%208%2022.749%208.329%2023.335%208.915%20C%2023.921%209.501%2024.25%2010.296%2024.25%2011.125%20C%2024.25%2011.954%2023.921%2012.749%2023.335%2013.335%20C%2022.749%2013.921%2021.954%2014.25%2021.125%2014.25%20C%2020.296%2014.25%2019.501%2013.921%2018.915%2013.335%20C%2018.329%2012.749%2018%2011.954%2018%2011.125%20C%2018%2010.296%2018.329%209.501%2018.915%208.915%20C%2019.501%208.329%2020.296%208%2021.125%208%20Z%20M%2013%200.5%20C%2014.326%200.5%2015.598%201.027%2016.535%201.964%20C%2017.473%202.902%2018%204.174%2018%205.5%20C%2018%206.826%2017.473%208.098%2016.535%209.036%20C%2015.598%209.973%2014.326%2010.5%2013%2010.5%20C%2011.674%2010.5%2010.402%209.973%209.464%209.036%20C%208.527%208.098%208%206.826%208%205.5%20C%208%204.174%208.527%202.902%209.464%201.964%20C%2010.402%201.027%2011.674%200.5%2013%200.5%20Z%22%20fill%3D%22rgb(250%2C99%2C24)%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E" alt="">
+                                </div>
+                                <div class="content d-flex flex-column gap-24 ">
+                                    <div class="head d-flex flex-column gap-8 ">
+                                        <h6 class="heading_18 m-0">
+                                            Free
+                                        </h6>
+                                        <h3 class="heading_40">
+                                            $0.00
+                                        </h3>
+                                        <p class="text_14 m-0">
+                                            Per User Annually
+                                        </p>
+                                    </div>
+
+                                    <div class="line"></div>
+
+                                    <div class="d-flex flex-column">
+                                        <h6 class="text_14 text_bold">For Small Teams</h6>
+                                        <div class="checkpoints d-flex flex-column gap-16">
+                                            <div class="points d-flex align-items-center ">
+                                                <div class="icon-wrapper d-flex justify-content-center align-items-center ">
+                                                    <div class="icon d-flex justify-content-center align-items-center ">
+                                                        <i class="fa-solid fa-check"></i>
+                                                    </div>
+                                                </div>
+                                                <p class="text_14">Add a descriptive feature here</p>
+                                            </div>
+                                            <div class="points d-flex align-items-center">
+                                                <div class="icon-wrapper d-flex justify-content-center align-items-center ">
+                                                    <div class="icon d-flex justify-content-center align-items-center ">
+                                                        <i class="fa-solid fa-check"></i>
+                                                    </div>
+                                                </div>
+                                                <p class="text_14">Add a feature point here</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="line"></div>
+
+                                    <a href="#" class="d-flex btn justify-content-center align-items-center learn-more">
+                                        <span class="m-0">Get Started</span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="image-wrapper">
+                                <div class="background-image position-absolute ">
+                                    <img src="https://framerusercontent.com/images/vTmtFrFA50CMiSMlo0o0Y5Hd83M.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card custom-border position-relative d-flex aos-init aos-animate" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-shine" data-aos-delay="200" data-aos-once="true">
+                            <div class="content-wrapper d-flex flex-column gap-24">
+                                <div class="pattern d-flex">
+                                    <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2026%2026%22%3E%3Cpath%20d%3D%22M%2013%2011.75%20C%2014.658%2011.75%2016.247%2012.409%2017.419%2013.581%20C%2018.591%2014.753%2019.25%2016.342%2019.25%2018%20L%2019.25%2025.5%20L%206.75%2025.5%20L%206.75%2018%20C%206.75%2016.342%207.408%2014.753%208.581%2013.581%20C%209.753%2012.409%2011.342%2011.75%2013%2011.75%20Z%20M%204.61%2015.507%20C%204.411%2016.178%204.294%2016.871%204.26%2017.57%20L%204.25%2018%20L%204.25%2025.5%20L%200.5%2025.5%20L%200.5%2019.875%20C%200.5%2018.797%200.898%2017.757%201.617%2016.954%20C%202.337%2016.151%203.327%2015.642%204.399%2015.525%20L%204.611%2015.507%20Z%20M%2021.39%2015.507%20C%2022.502%2015.575%2023.547%2016.065%2024.311%2016.876%20C%2025.074%2017.688%2025.5%2018.76%2025.5%2019.875%20L%2025.5%2025.5%20L%2021.75%2025.5%20L%2021.75%2018%20C%2021.75%2017.134%2021.625%2016.297%2021.39%2015.507%20Z%20M%204.875%208%20C%205.704%208%206.499%208.329%207.085%208.915%20C%207.671%209.501%208%2010.296%208%2011.125%20C%208%2011.954%207.671%2012.749%207.085%2013.335%20C%206.499%2013.921%205.704%2014.25%204.875%2014.25%20C%204.046%2014.25%203.251%2013.921%202.665%2013.335%20C%202.079%2012.749%201.75%2011.954%201.75%2011.125%20C%201.75%2010.296%202.079%209.501%202.665%208.915%20C%203.251%208.329%204.046%208%204.875%208%20Z%20M%2021.125%208%20C%2021.954%208%2022.749%208.329%2023.335%208.915%20C%2023.921%209.501%2024.25%2010.296%2024.25%2011.125%20C%2024.25%2011.954%2023.921%2012.749%2023.335%2013.335%20C%2022.749%2013.921%2021.954%2014.25%2021.125%2014.25%20C%2020.296%2014.25%2019.501%2013.921%2018.915%2013.335%20C%2018.329%2012.749%2018%2011.954%2018%2011.125%20C%2018%2010.296%2018.329%209.501%2018.915%208.915%20C%2019.501%208.329%2020.296%208%2021.125%208%20Z%20M%2013%200.5%20C%2014.326%200.5%2015.598%201.027%2016.535%201.964%20C%2017.473%202.902%2018%204.174%2018%205.5%20C%2018%206.826%2017.473%208.098%2016.535%209.036%20C%2015.598%209.973%2014.326%2010.5%2013%2010.5%20C%2011.674%2010.5%2010.402%209.973%209.464%209.036%20C%208.527%208.098%208%206.826%208%205.5%20C%208%204.174%208.527%202.902%209.464%201.964%20C%2010.402%201.027%2011.674%200.5%2013%200.5%20Z%22%20fill%3D%22rgb(250%2C99%2C24)%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E" alt="">
+                                </div>
+                                <div class="content d-flex flex-column gap-24 ">
+                                    <div class="head d-flex flex-column gap-8 ">
+                                        <h6 class="heading_18 m-0">
+                                            Plus
+                                        </h6>
+                                        <h3 class="heading_40">
+                                            $24.00
+                                        </h3>
+                                        <p class="text_14 m-0">
+                                            Per User Annually
+                                        </p>
+                                    </div>
+
+                                    <div class="line"></div>
+
+                                    <div class="d-flex flex-column">
+                                        <h6 class="text_14 text_bold">For Small Teams</h6>
+                                        <div class="checkpoints d-flex flex-column gap-16">
+                                            <div class="points d-flex align-items-center ">
+                                                <div class="icon-wrapper d-flex justify-content-center align-items-center ">
+                                                    <div class="icon d-flex justify-content-center align-items-center ">
+                                                        <i class="fa-solid fa-check"></i>
+                                                    </div>
+                                                </div>
+                                                <p class="text_14">Add a descriptive feature here</p>
+                                            </div>
+                                            <div class="points d-flex align-items-center">
+                                                <div class="icon-wrapper d-flex justify-content-center align-items-center ">
+                                                    <div class="icon d-flex justify-content-center align-items-center ">
+                                                        <i class="fa-solid fa-check"></i>
+                                                    </div>
+                                                </div>
+                                                <p class="text_14">Add a feature point here</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="line"></div>
+
+                                    <a href="#" class="d-flex btn justify-content-center align-items-center learn-more">
+                                        <span class="m-0">Get Started</span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="image-wrapper">
+                                <div class="background-image position-absolute ">
+                                    <img src="https://framerusercontent.com/images/vTmtFrFA50CMiSMlo0o0Y5Hd83M.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card pro_card custom-border position-relative d-flex aos-init aos-animate" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-shine" data-aos-delay="200" data-aos-once="true">
+                            <div class="content-wrapper d-flex flex-column gap-24">
+                                <div class="pattern d-flex">
+                                    <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2026%2026%22%3E%3Cpath%20d%3D%22M%2013%2011.75%20C%2014.658%2011.75%2016.247%2012.409%2017.419%2013.581%20C%2018.591%2014.753%2019.25%2016.342%2019.25%2018%20L%2019.25%2025.5%20L%206.75%2025.5%20L%206.75%2018%20C%206.75%2016.342%207.408%2014.753%208.581%2013.581%20C%209.753%2012.409%2011.342%2011.75%2013%2011.75%20Z%20M%204.61%2015.507%20C%204.411%2016.178%204.294%2016.871%204.26%2017.57%20L%204.25%2018%20L%204.25%2025.5%20L%200.5%2025.5%20L%200.5%2019.875%20C%200.5%2018.797%200.898%2017.757%201.617%2016.954%20C%202.337%2016.151%203.327%2015.642%204.399%2015.525%20L%204.611%2015.507%20Z%20M%2021.39%2015.507%20C%2022.502%2015.575%2023.547%2016.065%2024.311%2016.876%20C%2025.074%2017.688%2025.5%2018.76%2025.5%2019.875%20L%2025.5%2025.5%20L%2021.75%2025.5%20L%2021.75%2018%20C%2021.75%2017.134%2021.625%2016.297%2021.39%2015.507%20Z%20M%204.875%208%20C%205.704%208%206.499%208.329%207.085%208.915%20C%207.671%209.501%208%2010.296%208%2011.125%20C%208%2011.954%207.671%2012.749%207.085%2013.335%20C%206.499%2013.921%205.704%2014.25%204.875%2014.25%20C%204.046%2014.25%203.251%2013.921%202.665%2013.335%20C%202.079%2012.749%201.75%2011.954%201.75%2011.125%20C%201.75%2010.296%202.079%209.501%202.665%208.915%20C%203.251%208.329%204.046%208%204.875%208%20Z%20M%2021.125%208%20C%2021.954%208%2022.749%208.329%2023.335%208.915%20C%2023.921%209.501%2024.25%2010.296%2024.25%2011.125%20C%2024.25%2011.954%2023.921%2012.749%2023.335%2013.335%20C%2022.749%2013.921%2021.954%2014.25%2021.125%2014.25%20C%2020.296%2014.25%2019.501%2013.921%2018.915%2013.335%20C%2018.329%2012.749%2018%2011.954%2018%2011.125%20C%2018%2010.296%2018.329%209.501%2018.915%208.915%20C%2019.501%208.329%2020.296%208%2021.125%208%20Z%20M%2013%200.5%20C%2014.326%200.5%2015.598%201.027%2016.535%201.964%20C%2017.473%202.902%2018%204.174%2018%205.5%20C%2018%206.826%2017.473%208.098%2016.535%209.036%20C%2015.598%209.973%2014.326%2010.5%2013%2010.5%20C%2011.674%2010.5%2010.402%209.973%209.464%209.036%20C%208.527%208.098%208%206.826%208%205.5%20C%208%204.174%208.527%202.902%209.464%201.964%20C%2010.402%201.027%2011.674%200.5%2013%200.5%20Z%22%20fill%3D%22rgb(250%2C99%2C24)%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E" alt="">
+                                </div>
+                                <div class="content d-flex flex-column gap-24 ">
+                                    <div class="head d-flex flex-column gap-8 ">
+                                        <h6 class="heading_18 m-0">
+                                            Pro
+                                        </h6>
+                                        <h3 class="heading_40">
+                                            $64.00
+                                        </h3>
+                                        <p class="text_14 m-0">
+                                            Per User Annually
+                                        </p>
+                                    </div>
+
+                                    <div class="line"></div>
+
+                                    <div class="d-flex flex-column">
+                                        <h6 class="text_14 text_bold">For Small Teams</h6>
+                                        <div class="checkpoints d-flex flex-column gap-16">
+                                            <div class="points d-flex align-items-center ">
+                                                <div class="icon-wrapper d-flex justify-content-center align-items-center ">
+                                                    <div class="icon d-flex justify-content-center align-items-center ">
+                                                        <i class="fa-solid fa-check"></i>
+                                                    </div>
+                                                </div>
+                                                <p class="text_14">Add a descriptive feature here</p>
+                                            </div>
+                                            <div class="points d-flex align-items-center">
+                                                <div class="icon-wrapper d-flex justify-content-center align-items-center ">
+                                                    <div class="icon d-flex justify-content-center align-items-center ">
+                                                        <i class="fa-solid fa-check"></i>
+                                                    </div>
+                                                </div>
+                                                <p class="text_14">Add a feature point here</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="line"></div>
+
+                                    <a href="#" class="d-flex btn justify-content-center align-items-center orange-btn learn-more">
+                                        <span class="m-0">Sign up for free</span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="image-wrapper">
+                                <div class="background-image position-absolute ">
+                                    <img src="https://framerusercontent.com/images/vTmtFrFA50CMiSMlo0o0Y5Hd83M.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card custom-border position-relative d-flex aos-init aos-animate" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-shine" data-aos-delay="200" data-aos-once="true">
+                            <div class="content-wrapper d-flex flex-column gap-24">
+                                <div class="pattern d-flex">
+                                    <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2026%2026%22%3E%3Cpath%20d%3D%22M%2013%2011.75%20C%2014.658%2011.75%2016.247%2012.409%2017.419%2013.581%20C%2018.591%2014.753%2019.25%2016.342%2019.25%2018%20L%2019.25%2025.5%20L%206.75%2025.5%20L%206.75%2018%20C%206.75%2016.342%207.408%2014.753%208.581%2013.581%20C%209.753%2012.409%2011.342%2011.75%2013%2011.75%20Z%20M%204.61%2015.507%20C%204.411%2016.178%204.294%2016.871%204.26%2017.57%20L%204.25%2018%20L%204.25%2025.5%20L%200.5%2025.5%20L%200.5%2019.875%20C%200.5%2018.797%200.898%2017.757%201.617%2016.954%20C%202.337%2016.151%203.327%2015.642%204.399%2015.525%20L%204.611%2015.507%20Z%20M%2021.39%2015.507%20C%2022.502%2015.575%2023.547%2016.065%2024.311%2016.876%20C%2025.074%2017.688%2025.5%2018.76%2025.5%2019.875%20L%2025.5%2025.5%20L%2021.75%2025.5%20L%2021.75%2018%20C%2021.75%2017.134%2021.625%2016.297%2021.39%2015.507%20Z%20M%204.875%208%20C%205.704%208%206.499%208.329%207.085%208.915%20C%207.671%209.501%208%2010.296%208%2011.125%20C%208%2011.954%207.671%2012.749%207.085%2013.335%20C%206.499%2013.921%205.704%2014.25%204.875%2014.25%20C%204.046%2014.25%203.251%2013.921%202.665%2013.335%20C%202.079%2012.749%201.75%2011.954%201.75%2011.125%20C%201.75%2010.296%202.079%209.501%202.665%208.915%20C%203.251%208.329%204.046%208%204.875%208%20Z%20M%2021.125%208%20C%2021.954%208%2022.749%208.329%2023.335%208.915%20C%2023.921%209.501%2024.25%2010.296%2024.25%2011.125%20C%2024.25%2011.954%2023.921%2012.749%2023.335%2013.335%20C%2022.749%2013.921%2021.954%2014.25%2021.125%2014.25%20C%2020.296%2014.25%2019.501%2013.921%2018.915%2013.335%20C%2018.329%2012.749%2018%2011.954%2018%2011.125%20C%2018%2010.296%2018.329%209.501%2018.915%208.915%20C%2019.501%208.329%2020.296%208%2021.125%208%20Z%20M%2013%200.5%20C%2014.326%200.5%2015.598%201.027%2016.535%201.964%20C%2017.473%202.902%2018%204.174%2018%205.5%20C%2018%206.826%2017.473%208.098%2016.535%209.036%20C%2015.598%209.973%2014.326%2010.5%2013%2010.5%20C%2011.674%2010.5%2010.402%209.973%209.464%209.036%20C%208.527%208.098%208%206.826%208%205.5%20C%208%204.174%208.527%202.902%209.464%201.964%20C%2010.402%201.027%2011.674%200.5%2013%200.5%20Z%22%20fill%3D%22rgb(250%2C99%2C24)%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E" alt="">
+                                </div>
+                                <div class="content d-flex flex-column gap-24 ">
+                                    <div class="head d-flex flex-column gap-8 ">
+                                        <h6 class="heading_18 m-0">
+                                            Enterprise
+                                        </h6>
+                                        <h3 class="heading_40">
+                                            $120.00
+                                        </h3>
+                                        <p class="text_14 m-0">
+                                            Per User Annually
+                                        </p>
+                                    </div>
+
+                                    <div class="line"></div>
+
+                                    <div class="d-flex flex-column">
+                                        <h6 class="text_14 text_bold">For Small Teams</h6>
+                                        <div class="checkpoints d-flex flex-column gap-16">
+                                            <div class="points d-flex align-items-center ">
+                                                <div class="icon-wrapper d-flex justify-content-center align-items-center ">
+                                                    <div class="icon d-flex justify-content-center align-items-center ">
+                                                        <i class="fa-solid fa-check"></i>
+                                                    </div>
+                                                </div>
+                                                <p class="text_14">Add a descriptive feature here</p>
+                                            </div>
+                                            <div class="points d-flex align-items-center">
+                                                <div class="icon-wrapper d-flex justify-content-center align-items-center ">
+                                                    <div class="icon d-flex justify-content-center align-items-center ">
+                                                        <i class="fa-solid fa-check"></i>
+                                                    </div>
+                                                </div>
+                                                <p class="text_14">Add a feature point here</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="line"></div>
+
+                                    <a href="#" class="d-flex btn justify-content-center align-items-center learn-more">
+                                        <span class="m-0">Get Started</span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="image-wrapper">
+                                <div class="background-image position-absolute ">
+                                    <img src="https://framerusercontent.com/images/vTmtFrFA50CMiSMlo0o0Y5Hd83M.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="pricing_container d-flex gap-32 position-relative faq_tab_in d-none" >
+                        
+                        <div class="card custom-border position-relative d-flex aos-init aos-animate" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-shine" data-aos-delay="200" data-aos-once="true">
+                            <div class="content-wrapper d-flex flex-column gap-24">
+                                <div class="pattern d-flex">
+                                    <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2026%2026%22%3E%3Cpath%20d%3D%22M%2013%2011.75%20C%2014.658%2011.75%2016.247%2012.409%2017.419%2013.581%20C%2018.591%2014.753%2019.25%2016.342%2019.25%2018%20L%2019.25%2025.5%20L%206.75%2025.5%20L%206.75%2018%20C%206.75%2016.342%207.408%2014.753%208.581%2013.581%20C%209.753%2012.409%2011.342%2011.75%2013%2011.75%20Z%20M%204.61%2015.507%20C%204.411%2016.178%204.294%2016.871%204.26%2017.57%20L%204.25%2018%20L%204.25%2025.5%20L%200.5%2025.5%20L%200.5%2019.875%20C%200.5%2018.797%200.898%2017.757%201.617%2016.954%20C%202.337%2016.151%203.327%2015.642%204.399%2015.525%20L%204.611%2015.507%20Z%20M%2021.39%2015.507%20C%2022.502%2015.575%2023.547%2016.065%2024.311%2016.876%20C%2025.074%2017.688%2025.5%2018.76%2025.5%2019.875%20L%2025.5%2025.5%20L%2021.75%2025.5%20L%2021.75%2018%20C%2021.75%2017.134%2021.625%2016.297%2021.39%2015.507%20Z%20M%204.875%208%20C%205.704%208%206.499%208.329%207.085%208.915%20C%207.671%209.501%208%2010.296%208%2011.125%20C%208%2011.954%207.671%2012.749%207.085%2013.335%20C%206.499%2013.921%205.704%2014.25%204.875%2014.25%20C%204.046%2014.25%203.251%2013.921%202.665%2013.335%20C%202.079%2012.749%201.75%2011.954%201.75%2011.125%20C%201.75%2010.296%202.079%209.501%202.665%208.915%20C%203.251%208.329%204.046%208%204.875%208%20Z%20M%2021.125%208%20C%2021.954%208%2022.749%208.329%2023.335%208.915%20C%2023.921%209.501%2024.25%2010.296%2024.25%2011.125%20C%2024.25%2011.954%2023.921%2012.749%2023.335%2013.335%20C%2022.749%2013.921%2021.954%2014.25%2021.125%2014.25%20C%2020.296%2014.25%2019.501%2013.921%2018.915%2013.335%20C%2018.329%2012.749%2018%2011.954%2018%2011.125%20C%2018%2010.296%2018.329%209.501%2018.915%208.915%20C%2019.501%208.329%2020.296%208%2021.125%208%20Z%20M%2013%200.5%20C%2014.326%200.5%2015.598%201.027%2016.535%201.964%20C%2017.473%202.902%2018%204.174%2018%205.5%20C%2018%206.826%2017.473%208.098%2016.535%209.036%20C%2015.598%209.973%2014.326%2010.5%2013%2010.5%20C%2011.674%2010.5%2010.402%209.973%209.464%209.036%20C%208.527%208.098%208%206.826%208%205.5%20C%208%204.174%208.527%202.902%209.464%201.964%20C%2010.402%201.027%2011.674%200.5%2013%200.5%20Z%22%20fill%3D%22rgb(250%2C99%2C24)%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E" alt="">
+                                </div>
+                                <div class="content d-flex flex-column gap-24 ">
+                                    <div class="head d-flex flex-column gap-8 ">
+                                        <h6 class="heading_18 m-0">
+                                            Free
+                                        </h6>
+                                        <h3 class="heading_40">
+                                            $0.00
+                                        </h3>
+                                        <p class="text_14 m-0">
+                                            Per User Annually
+                                        </p>
+                                    </div>
+
+                                    <div class="line"></div>
+
+                                    <div class="d-flex flex-column">
+                                        <h6 class="text_14 text_bold">For Small Teams</h6>
+                                        <div class="checkpoints d-flex flex-column gap-16">
+                                            <div class="points d-flex align-items-center ">
+                                                <div class="icon-wrapper d-flex justify-content-center align-items-center ">
+                                                    <div class="icon d-flex justify-content-center align-items-center ">
+                                                        <i class="fa-solid fa-check"></i>
+                                                    </div>
+                                                </div>
+                                                <p class="text_14">Add a descriptive feature here</p>
+                                            </div>
+                                            <div class="points d-flex align-items-center">
+                                                <div class="icon-wrapper d-flex justify-content-center align-items-center ">
+                                                    <div class="icon d-flex justify-content-center align-items-center ">
+                                                        <i class="fa-solid fa-check"></i>
+                                                    </div>
+                                                </div>
+                                                <p class="text_14">Add a feature point here</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="line"></div>
+
+                                    <a href="#" class="d-flex btn justify-content-center align-items-center learn-more">
+                                        <span class="m-0">Get Started</span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="image-wrapper">
+                                <div class="background-image position-absolute ">
+                                    <img src="https://framerusercontent.com/images/vTmtFrFA50CMiSMlo0o0Y5Hd83M.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card custom-border position-relative d-flex aos-init aos-animate" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-shine" data-aos-delay="200" data-aos-once="true">
+                            <div class="content-wrapper d-flex flex-column gap-24">
+                                <div class="pattern d-flex">
+                                    <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2026%2026%22%3E%3Cpath%20d%3D%22M%2013%2011.75%20C%2014.658%2011.75%2016.247%2012.409%2017.419%2013.581%20C%2018.591%2014.753%2019.25%2016.342%2019.25%2018%20L%2019.25%2025.5%20L%206.75%2025.5%20L%206.75%2018%20C%206.75%2016.342%207.408%2014.753%208.581%2013.581%20C%209.753%2012.409%2011.342%2011.75%2013%2011.75%20Z%20M%204.61%2015.507%20C%204.411%2016.178%204.294%2016.871%204.26%2017.57%20L%204.25%2018%20L%204.25%2025.5%20L%200.5%2025.5%20L%200.5%2019.875%20C%200.5%2018.797%200.898%2017.757%201.617%2016.954%20C%202.337%2016.151%203.327%2015.642%204.399%2015.525%20L%204.611%2015.507%20Z%20M%2021.39%2015.507%20C%2022.502%2015.575%2023.547%2016.065%2024.311%2016.876%20C%2025.074%2017.688%2025.5%2018.76%2025.5%2019.875%20L%2025.5%2025.5%20L%2021.75%2025.5%20L%2021.75%2018%20C%2021.75%2017.134%2021.625%2016.297%2021.39%2015.507%20Z%20M%204.875%208%20C%205.704%208%206.499%208.329%207.085%208.915%20C%207.671%209.501%208%2010.296%208%2011.125%20C%208%2011.954%207.671%2012.749%207.085%2013.335%20C%206.499%2013.921%205.704%2014.25%204.875%2014.25%20C%204.046%2014.25%203.251%2013.921%202.665%2013.335%20C%202.079%2012.749%201.75%2011.954%201.75%2011.125%20C%201.75%2010.296%202.079%209.501%202.665%208.915%20C%203.251%208.329%204.046%208%204.875%208%20Z%20M%2021.125%208%20C%2021.954%208%2022.749%208.329%2023.335%208.915%20C%2023.921%209.501%2024.25%2010.296%2024.25%2011.125%20C%2024.25%2011.954%2023.921%2012.749%2023.335%2013.335%20C%2022.749%2013.921%2021.954%2014.25%2021.125%2014.25%20C%2020.296%2014.25%2019.501%2013.921%2018.915%2013.335%20C%2018.329%2012.749%2018%2011.954%2018%2011.125%20C%2018%2010.296%2018.329%209.501%2018.915%208.915%20C%2019.501%208.329%2020.296%208%2021.125%208%20Z%20M%2013%200.5%20C%2014.326%200.5%2015.598%201.027%2016.535%201.964%20C%2017.473%202.902%2018%204.174%2018%205.5%20C%2018%206.826%2017.473%208.098%2016.535%209.036%20C%2015.598%209.973%2014.326%2010.5%2013%2010.5%20C%2011.674%2010.5%2010.402%209.973%209.464%209.036%20C%208.527%208.098%208%206.826%208%205.5%20C%208%204.174%208.527%202.902%209.464%201.964%20C%2010.402%201.027%2011.674%200.5%2013%200.5%20Z%22%20fill%3D%22rgb(250%2C99%2C24)%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E" alt="">
+                                </div>
+                                <div class="content d-flex flex-column gap-24 ">
+                                    <div class="head d-flex flex-column gap-8 ">
+                                        <h6 class="heading_18 m-0">
+                                            Plus
+                                        </h6>
+                                        <h3 class="heading_40">
+                                            $24.00
+                                        </h3>
+                                        <p class="text_14 m-0">
+                                            Per User Annually
+                                        </p>
+                                    </div>
+
+                                    <div class="line"></div>
+
+                                    <div class="d-flex flex-column">
+                                        <h6 class="text_14 text_bold">For Small Teams</h6>
+                                        <div class="checkpoints d-flex flex-column gap-16">
+                                            <div class="points d-flex align-items-center ">
+                                                <div class="icon-wrapper d-flex justify-content-center align-items-center ">
+                                                    <div class="icon d-flex justify-content-center align-items-center ">
+                                                        <i class="fa-solid fa-check"></i>
+                                                    </div>
+                                                </div>
+                                                <p class="text_14">Add a descriptive feature here</p>
+                                            </div>
+                                            <div class="points d-flex align-items-center">
+                                                <div class="icon-wrapper d-flex justify-content-center align-items-center ">
+                                                    <div class="icon d-flex justify-content-center align-items-center ">
+                                                        <i class="fa-solid fa-check"></i>
+                                                    </div>
+                                                </div>
+                                                <p class="text_14">Add a feature point here</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="line"></div>
+
+                                    <a href="#" class="d-flex btn justify-content-center align-items-center learn-more">
+                                        <span class="m-0">Get Started</span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="image-wrapper">
+                                <div class="background-image position-absolute ">
+                                    <img src="https://framerusercontent.com/images/vTmtFrFA50CMiSMlo0o0Y5Hd83M.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card pro_card custom-border position-relative d-flex aos-init aos-animate" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-shine" data-aos-delay="200" data-aos-once="true">
+                            <div class="content-wrapper d-flex flex-column gap-24">
+                                <div class="pattern d-flex">
+                                    <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2026%2026%22%3E%3Cpath%20d%3D%22M%2013%2011.75%20C%2014.658%2011.75%2016.247%2012.409%2017.419%2013.581%20C%2018.591%2014.753%2019.25%2016.342%2019.25%2018%20L%2019.25%2025.5%20L%206.75%2025.5%20L%206.75%2018%20C%206.75%2016.342%207.408%2014.753%208.581%2013.581%20C%209.753%2012.409%2011.342%2011.75%2013%2011.75%20Z%20M%204.61%2015.507%20C%204.411%2016.178%204.294%2016.871%204.26%2017.57%20L%204.25%2018%20L%204.25%2025.5%20L%200.5%2025.5%20L%200.5%2019.875%20C%200.5%2018.797%200.898%2017.757%201.617%2016.954%20C%202.337%2016.151%203.327%2015.642%204.399%2015.525%20L%204.611%2015.507%20Z%20M%2021.39%2015.507%20C%2022.502%2015.575%2023.547%2016.065%2024.311%2016.876%20C%2025.074%2017.688%2025.5%2018.76%2025.5%2019.875%20L%2025.5%2025.5%20L%2021.75%2025.5%20L%2021.75%2018%20C%2021.75%2017.134%2021.625%2016.297%2021.39%2015.507%20Z%20M%204.875%208%20C%205.704%208%206.499%208.329%207.085%208.915%20C%207.671%209.501%208%2010.296%208%2011.125%20C%208%2011.954%207.671%2012.749%207.085%2013.335%20C%206.499%2013.921%205.704%2014.25%204.875%2014.25%20C%204.046%2014.25%203.251%2013.921%202.665%2013.335%20C%202.079%2012.749%201.75%2011.954%201.75%2011.125%20C%201.75%2010.296%202.079%209.501%202.665%208.915%20C%203.251%208.329%204.046%208%204.875%208%20Z%20M%2021.125%208%20C%2021.954%208%2022.749%208.329%2023.335%208.915%20C%2023.921%209.501%2024.25%2010.296%2024.25%2011.125%20C%2024.25%2011.954%2023.921%2012.749%2023.335%2013.335%20C%2022.749%2013.921%2021.954%2014.25%2021.125%2014.25%20C%2020.296%2014.25%2019.501%2013.921%2018.915%2013.335%20C%2018.329%2012.749%2018%2011.954%2018%2011.125%20C%2018%2010.296%2018.329%209.501%2018.915%208.915%20C%2019.501%208.329%2020.296%208%2021.125%208%20Z%20M%2013%200.5%20C%2014.326%200.5%2015.598%201.027%2016.535%201.964%20C%2017.473%202.902%2018%204.174%2018%205.5%20C%2018%206.826%2017.473%208.098%2016.535%209.036%20C%2015.598%209.973%2014.326%2010.5%2013%2010.5%20C%2011.674%2010.5%2010.402%209.973%209.464%209.036%20C%208.527%208.098%208%206.826%208%205.5%20C%208%204.174%208.527%202.902%209.464%201.964%20C%2010.402%201.027%2011.674%200.5%2013%200.5%20Z%22%20fill%3D%22rgb(250%2C99%2C24)%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E" alt="">
+                                </div>
+                                <div class="content d-flex flex-column gap-24 ">
+                                    <div class="head d-flex flex-column gap-8 ">
+                                        <h6 class="heading_18 m-0">
+                                            Pro
+                                        </h6>
+                                        <h3 class="heading_40">
+                                            $64.00
+                                        </h3>
+                                        <p class="text_14 m-0">
+                                            Per User Annually
+                                        </p>
+                                    </div>
+
+                                    <div class="line"></div>
+
+                                    <div class="d-flex flex-column">
+                                        <h6 class="text_14 text_bold">For Small Teams</h6>
+                                        <div class="checkpoints d-flex flex-column gap-16">
+                                            <div class="points d-flex align-items-center ">
+                                                <div class="icon-wrapper d-flex justify-content-center align-items-center ">
+                                                    <div class="icon d-flex justify-content-center align-items-center ">
+                                                        <i class="fa-solid fa-check"></i>
+                                                    </div>
+                                                </div>
+                                                <p class="text_14">Add a descriptive feature here</p>
+                                            </div>
+                                            <div class="points d-flex align-items-center">
+                                                <div class="icon-wrapper d-flex justify-content-center align-items-center ">
+                                                    <div class="icon d-flex justify-content-center align-items-center ">
+                                                        <i class="fa-solid fa-check"></i>
+                                                    </div>
+                                                </div>
+                                                <p class="text_14">Add a feature point here</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="line"></div>
+
+                                    <a href="#" class="d-flex btn justify-content-center align-items-center orange-btn learn-more">
+                                        <span class="m-0">Sign up for free</span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="image-wrapper">
+                                <div class="background-image position-absolute ">
+                                    <img src="https://framerusercontent.com/images/vTmtFrFA50CMiSMlo0o0Y5Hd83M.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card custom-border position-relative d-flex aos-init aos-animate" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-shine" data-aos-delay="200" data-aos-once="true">
+                            <div class="content-wrapper d-flex flex-column gap-24">
+                                <div class="pattern d-flex">
+                                    <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2026%2026%22%3E%3Cpath%20d%3D%22M%2013%2011.75%20C%2014.658%2011.75%2016.247%2012.409%2017.419%2013.581%20C%2018.591%2014.753%2019.25%2016.342%2019.25%2018%20L%2019.25%2025.5%20L%206.75%2025.5%20L%206.75%2018%20C%206.75%2016.342%207.408%2014.753%208.581%2013.581%20C%209.753%2012.409%2011.342%2011.75%2013%2011.75%20Z%20M%204.61%2015.507%20C%204.411%2016.178%204.294%2016.871%204.26%2017.57%20L%204.25%2018%20L%204.25%2025.5%20L%200.5%2025.5%20L%200.5%2019.875%20C%200.5%2018.797%200.898%2017.757%201.617%2016.954%20C%202.337%2016.151%203.327%2015.642%204.399%2015.525%20L%204.611%2015.507%20Z%20M%2021.39%2015.507%20C%2022.502%2015.575%2023.547%2016.065%2024.311%2016.876%20C%2025.074%2017.688%2025.5%2018.76%2025.5%2019.875%20L%2025.5%2025.5%20L%2021.75%2025.5%20L%2021.75%2018%20C%2021.75%2017.134%2021.625%2016.297%2021.39%2015.507%20Z%20M%204.875%208%20C%205.704%208%206.499%208.329%207.085%208.915%20C%207.671%209.501%208%2010.296%208%2011.125%20C%208%2011.954%207.671%2012.749%207.085%2013.335%20C%206.499%2013.921%205.704%2014.25%204.875%2014.25%20C%204.046%2014.25%203.251%2013.921%202.665%2013.335%20C%202.079%2012.749%201.75%2011.954%201.75%2011.125%20C%201.75%2010.296%202.079%209.501%202.665%208.915%20C%203.251%208.329%204.046%208%204.875%208%20Z%20M%2021.125%208%20C%2021.954%208%2022.749%208.329%2023.335%208.915%20C%2023.921%209.501%2024.25%2010.296%2024.25%2011.125%20C%2024.25%2011.954%2023.921%2012.749%2023.335%2013.335%20C%2022.749%2013.921%2021.954%2014.25%2021.125%2014.25%20C%2020.296%2014.25%2019.501%2013.921%2018.915%2013.335%20C%2018.329%2012.749%2018%2011.954%2018%2011.125%20C%2018%2010.296%2018.329%209.501%2018.915%208.915%20C%2019.501%208.329%2020.296%208%2021.125%208%20Z%20M%2013%200.5%20C%2014.326%200.5%2015.598%201.027%2016.535%201.964%20C%2017.473%202.902%2018%204.174%2018%205.5%20C%2018%206.826%2017.473%208.098%2016.535%209.036%20C%2015.598%209.973%2014.326%2010.5%2013%2010.5%20C%2011.674%2010.5%2010.402%209.973%209.464%209.036%20C%208.527%208.098%208%206.826%208%205.5%20C%208%204.174%208.527%202.902%209.464%201.964%20C%2010.402%201.027%2011.674%200.5%2013%200.5%20Z%22%20fill%3D%22rgb(250%2C99%2C24)%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E" alt="">
+                                </div>
+                                <div class="content d-flex flex-column gap-24 ">
+                                    <div class="head d-flex flex-column gap-8 ">
+                                        <h6 class="heading_18 m-0">
+                                            Enterprise
+                                        </h6>
+                                        <h3 class="heading_40">
+                                            $120.00
+                                        </h3>
+                                        <p class="text_14 m-0">
+                                            Per User Annually
+                                        </p>
+                                    </div>
+
+                                    <div class="line"></div>
+
+                                    <div class="d-flex flex-column">
+                                        <h6 class="text_14 text_bold">For Small Teams</h6>
+                                        <div class="checkpoints d-flex flex-column gap-16">
+                                            <div class="points d-flex align-items-center ">
+                                                <div class="icon-wrapper d-flex justify-content-center align-items-center ">
+                                                    <div class="icon d-flex justify-content-center align-items-center ">
+                                                        <i class="fa-solid fa-check"></i>
+                                                    </div>
+                                                </div>
+                                                <p class="text_14">Add a descriptive feature here</p>
+                                            </div>
+                                            <div class="points d-flex align-items-center">
+                                                <div class="icon-wrapper d-flex justify-content-center align-items-center ">
+                                                    <div class="icon d-flex justify-content-center align-items-center ">
+                                                        <i class="fa-solid fa-check"></i>
+                                                    </div>
+                                                </div>
+                                                <p class="text_14">Add a feature point here</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="line"></div>
+
+                                    <a href="#" class="d-flex btn justify-content-center align-items-center learn-more">
+                                        <span class="m-0">Get Started</span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="image-wrapper">
+                                <div class="background-image position-absolute ">
+                                    <img src="https://framerusercontent.com/images/vTmtFrFA50CMiSMlo0o0Y5Hd83M.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="background-big-image position-absolute" >
+            <img src="https://framerusercontent.com/images/r6r3yoEjmRyyyPwqyY74q75I.svg" alt="" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-shine" data-aos-delay="0" data-aos-once="true">
+        </div>
+    </header>
+
+<!-- Glide for Enterprise -->
+    <section class="glide_for_enterprise" >
+        <div class="container d-flex flex-column gap-32 ">
+            <div class="about-review-section p-0">
+                <div class="container d-flex gap-136 align-items-center ">
+                    <div class="head">
+                        <div class="title" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-shine" data-aos-delay="0" data-aos-once="true" >
+                            <h6 class="m-0">72,000 companles have already built apps with Spectra.</h6>
+                        </div>
+                    </div>
+                    <div class="marquee" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-shine" data-aos-delay="0" data-aos-once="true" >
+                        <div class="marquee-content scroll">
+                            <div class="outer-image-wrapper">
+                                <div class="inner-image-wrapper">
+                                    <img src="https://framerusercontent.com/images/XCtAKzczBaDnEe6Odvm06DYev4.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="outer-image-wrapper">
+                                <div class="inner-image-wrapper">
+                                    <img src="https://framerusercontent.com/images/5to7TFV0hEYrDwRnBt4AwzOAc.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="outer-image-wrapper ">
+                                <div class="inner-image-wrapper">
+                                    <img src="https://framerusercontent.com/images/AZ2giOXhN0NUvf5pwzOQ0ZOpCl8.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="outer-image-wrapper">
+                                <div class="inner-image-wrapper">
+                                    <img src="https://framerusercontent.com/images/WbeqHmQsqim3qLrPBQEnU9o4OJM.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="outer-image-wrapper">
+                                <div class="inner-image-wrapper">
+                                    <img src="https://framerusercontent.com/images/mt4pgIeXewwOhjxqcamfXf4itIQ.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="marquee-content scroll">
+                            <div class="outer-image-wrapper">
+                                <div class="inner-image-wrapper">
+                                    <img src="https://framerusercontent.com/images/XCtAKzczBaDnEe6Odvm06DYev4.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="outer-image-wrapper">
+                                <div class="inner-image-wrapper">
+                                    <img src="https://framerusercontent.com/images/5to7TFV0hEYrDwRnBt4AwzOAc.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="outer-image-wrapper ">
+                                <div class="inner-image-wrapper">
+                                    <img src="https://framerusercontent.com/images/AZ2giOXhN0NUvf5pwzOQ0ZOpCl8.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="outer-image-wrapper">
+                                <div class="inner-image-wrapper">
+                                    <img src="https://framerusercontent.com/images/WbeqHmQsqim3qLrPBQEnU9o4OJM.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="outer-image-wrapper">
+                                <div class="inner-image-wrapper">
+                                    <img src="https://framerusercontent.com/images/mt4pgIeXewwOhjxqcamfXf4itIQ.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="marquee-content scroll">
+                            <div class="outer-image-wrapper">
+                                <div class="inner-image-wrapper">
+                                    <img src="https://framerusercontent.com/images/XCtAKzczBaDnEe6Odvm06DYev4.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="outer-image-wrapper">
+                                <div class="inner-image-wrapper">
+                                    <img src="https://framerusercontent.com/images/5to7TFV0hEYrDwRnBt4AwzOAc.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="outer-image-wrapper ">
+                                <div class="inner-image-wrapper">
+                                    <img src="https://framerusercontent.com/images/AZ2giOXhN0NUvf5pwzOQ0ZOpCl8.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="outer-image-wrapper">
+                                <div class="inner-image-wrapper">
+                                    <img src="https://framerusercontent.com/images/WbeqHmQsqim3qLrPBQEnU9o4OJM.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="outer-image-wrapper">
+                                <div class="inner-image-wrapper">
+                                    <img src="https://framerusercontent.com/images/mt4pgIeXewwOhjxqcamfXf4itIQ.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="card custom-border position-relative d-flex flex-row justify-content-between align-items-center flex-fill" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-shine" data-aos-delay="200" data-aos-once="true">
+                <div class="left d-flex">
+                    <div class="left_container d-flex flex-column gap-32 ">
+                        <div class=" d-flex flex-column gap-16 ">
+                            <h3 class="heading_40">
+                                Glide for Enterprise
+                            </h3>
+                            
+                            <p class="text_16">
+                                Elevate enterprise efficiency with Glide. Our robust solution ensures peak performance and seamless collaboration.
+                            </p>
+                        </div>
+                        <a href="#" class="d-flex btn justify-content-center align-items-center orange-btn learn-more">
+                            <span class="m-0">Contact Sale</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="right_container d-flex flex-column gap-32">
+                        <div class="custom-badge custom-border" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-shine" data-aos-delay="400" data-aos-once="true">
+                            <div class="d-flex gap-8 align-items-center justify-content-center ">
+                                <div class="icon">
+                                    <i class="fa-regular fa-calendar"></i>
+                                </div>
+                                <p class="text_16 text_bold" >10 Million rows of data</p>
+                            </div>
+                        </div>
+                        <div class="custom-badge custom-border flex-fill" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-shine" data-aos-delay="600" data-aos-once="true" >
+                            <div class="d-flex gap-8 align-items-center justify-content-center ">
+                                <div class="icon">
+                                    <i class="fa-regular fa-calendar"></i>
+                                </div>
+                                <p class="text_16 text_bold" >Custom Terms of Services</p>
+                            </div>
+                        </div>
+                        <div class="custom-badge custom-border flex-fill" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-shine" data-aos-delay="800" data-aos-once="true" >
+                            <div class="d-flex gap-8 align-items-center justify-content-center ">
+                                <div class="icon">
+                                    <i class="fa-regular fa-calendar"></i>
+                                </div>
+                                <p class="text_16 text_bold" >Cancel anytime Aspect</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-wrapper">
+                    <div class="background-image position-absolute ">
+                        <img src="https://framerusercontent.com/images/vTmtFrFA50CMiSMlo0o0Y5Hd83M.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Spectra Plans -->
+    <section class="spectra_plans_section blog_hero_section product_hero_section analytics-section position-relative " >
+        <div class="container position-relative">
+            <div class="wrapper d-flex flex-column justify-content-center gap-48 ">
+                <div class="head d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-shine" data-aos-once="true" >
+                    <div class="head-content d-flex flex-column align-items-center gap-16">
+                        <h1 class="heading text-center ">Spectra Plans</h1>
+                        <p class="description text-center p-0">Our commenting feature is a firm favorite among our customers, eliminating the need for endless email threads and multiple messaging apps.</p>
+                    </div>
+                </div>
+                <div class="mid" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-shine" data-aos-once="true">
+                    <div class="mid_container d-flex gap-24 ">
+                        <div class="left d-flex flex-column justify-content-end gap-12 ">
+                            <h6 class="text_14 text_bold">
+                                Spectra Billing:
+                            </h6>
+                            <div class="tab_container d-flex">
+                                <div class="d-flex flex-column flex-full position-relative">
+                                    <div class="spectra_plans_tab_controller tab position-relative d-flex gap-6" data-tabname="tab1" >
+                                        <div class="icon">
+                                            <img src="public/images/stars_icon.svg" alt="">
+                                        </div>
+                                        <span class="d-inline-block" >Bill Annually</span>
+                                    </div>
+                                    <div class="spectra_plans_tab_controller tab position-relative d-flex gap-6" data-tabname="tab2" >
+                                        <div class="icon">
+                                            <img src="public/images/database_icon.svg" alt="">
+                                        </div>
+                                        <span class="d-inline-block" >Bill Monthly</span>
+                                    </div>
+                                    <div class="tab spectra_plans_tab_controller back_tab"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right flex-fill">
+                            <div class="pricing_container d-flex gap-24 position-relative faq_tab_in" >
+                        
+                                <div class="card custom-border position-relative d-flex flex-fill aos-init aos-animate" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-shine" data-aos-delay="200" data-aos-once="true">
+                                    <div class="content-wrapper d-flex flex-column gap-24">
+                                        <div class="content d-flex flex-column gap-16 ">
+                                            <div class="head d-flex flex-column gap-8 ">
+                                                <h6 class="heading_18 m-0">
+                                                    Free
+                                                </h6>
+                                                <div class="d-flex gap-6 ">
+                                                    <p class="text_14">
+                                                        $0.00
+                                                    </p>
+                                                    <p class="text_14 m-0">
+                                                        user/m0
+                                                    </p>
+                                                </div>
+                                            </div>
+        
+                                            <div class="line"></div>
+        
+                                            <a href="#" class="d-flex btn justify-content-center align-items-center learn-more">
+                                                <span class="m-0">Get Started</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+        
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="card custom-border position-relative d-flex flex-fill aos-init aos-animate" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-shine" data-aos-delay="200" data-aos-once="true">
+                                    <div class="content-wrapper d-flex flex-column gap-24">
+                                        <div class="content d-flex flex-column gap-16 ">
+                                            <div class="head d-flex flex-column gap-8 ">
+                                                <h6 class="heading_18 m-0">
+                                                    Plus
+                                                </h6>
+                                                <div class="d-flex gap-6 ">
+                                                    <p class="text_14">
+                                                        $24.00
+                                                    </p>
+                                                    <p class="text_14 m-0">
+                                                        user/m0
+                                                    </p>
+                                                </div>
+                                            </div>
+        
+                                            <div class="line"></div>
+        
+                                            <a href="#" class="d-flex btn justify-content-center align-items-center learn-more">
+                                                <span class="m-0">Get Started</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+        
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card custom-border position-relative d-flex flex-fill aos-init aos-animate" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-shine" data-aos-delay="200" data-aos-once="true">
+                                    <div class="content-wrapper d-flex flex-column gap-24">
+                                        <div class="content d-flex flex-column gap-16 ">
+                                            <div class="head d-flex flex-column gap-8 ">
+                                                <h6 class="heading_18 m-0">
+                                                    Pro
+                                                </h6>
+                                                <div class="d-flex gap-6 ">
+                                                    <p class="text_14">
+                                                        $64.00
+                                                    </p>
+                                                    <p class="text_14 m-0">
+                                                        user/m0
+                                                    </p>
+                                                </div>
+                                            </div>
+        
+                                            <div class="line"></div>
+        
+                                            <a href="#" class="d-flex btn justify-content-center orange-btn align-items-center learn-more">
+                                                <span class="m-0">Get Started</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+        
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card custom-border position-relative d-flex flex-fill aos-init aos-animate" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-shine" data-aos-delay="200" data-aos-once="true">
+                                    <div class="content-wrapper d-flex flex-column gap-24">
+                                        <div class="content d-flex flex-column gap-16 ">
+                                            <div class="head d-flex flex-column gap-8 ">
+                                                <h6 class="heading_18 m-0">
+                                                    Enterprise
+                                                </h6>
+                                                <div class="d-flex gap-6 ">
+                                                    <p class="text_14">
+                                                        $120.00
+                                                    </p>
+                                                    <p class="text_14 m-0">
+                                                        user/m0
+                                                    </p>
+                                                </div>
+                                            </div>
+        
+                                            <div class="line"></div>
+        
+                                            <a href="#" class="d-flex btn justify-content-center align-items-center learn-more">
+                                                <span class="m-0">Talk to Sales</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+        
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-shine" data-aos-once="true"></div>
+                <div class="foot d-flex" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-shine" data-aos-once="true" >
+                    <div class="foot_container d-flex flex-column gap-48 flex-fill ">
+                        <div class="custom_table d-flex flex-column gap-16" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-shine" data-aos-once="true">
+                            <h6 class="heading_20">Workspace</h6>
+                            <div class="table_row d-flex flex-fill light-border">
+                                <div class="table_data table_data1 d-flex gap-8">
+                                    <div class="info_icon_wrapper d-flex justify-content-center align-items-center">
+                                        <div class="info_icon d-flex justify-content-center align-items-center ">
+                                            <i class="fa-solid fa-info"></i>
+                                        </div>
+                                    </div>
+                                    <h6 class="text_14 text_bold">Number of Seats</h6>
+                                </div>
+                                <div class="table_data flex-fill">
+                                    <h6 class="text_14 text_bold">Up to 3</h6>
+                                </div>
+                                <div class="table_data flex-fill">
+                                    <h6 class="text_14 text_bold">Unlimited</h6>
+                                </div>
+                                <div class="table_data flex-fill">
+                                    <h6 class="text_14 text_bold">Unlimited</h6>
+                                </div>
+                                <div class="table_data flex-fill">
+                                    <h6 class="text_14 text_bold">Unlimited</h6>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="custom_table d-flex flex-column gap-16" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-shine" data-aos-once="true">
+                            <h6 class="heading_20">Email</h6>
+                            <div class="table_row d-flex flex-fill light-border">
+                                <div class="table_data table_data1 d-flex gap-8">
+                                    <div class="info_icon_wrapper d-flex justify-content-center align-items-center">
+                                        <div class="info_icon d-flex justify-content-center align-items-center ">
+                                            <i class="fa-solid fa-info"></i>
+                                        </div>
+                                    </div>
+                                    <h6 class="text_14 text_bold">Email and calendar sync</h6>
+                                </div>
+                                <div class="table_data flex-fill">
+                                    <h6 class="text_14 text_bold">1 account per user</h6>
+                                </div>
+                                <div class="table_data flex-fill">
+                                    <h6 class="text_14 text_bold">1 account per user</h6>
+                                </div>
+                                <div class="table_data flex-fill">
+                                    <h6 class="text_14 text_bold">2 account per user</h6>
+                                </div>
+                                <div class="table_data flex-fill">
+                                    <h6 class="text_14 text_bold">3 account per user</h6>
+                                </div>
+                                
+                            </div>
+                            <div class="table_row d-flex flex-fill light-border">
+                                <div class="table_data table_data1 d-flex gap-8">
+                                    <div class="info_icon_wrapper d-flex justify-content-center align-items-center">
+                                        <div class="info_icon d-flex justify-content-center align-items-center ">
+                                            <i class="fa-solid fa-info"></i>
+                                        </div>
+                                    </div>
+                                    <h6 class="text_14 text_bold">Email Sending</h6>
+                                </div>
+                                <div class="table_data flex-fill">
+                                    <h6 class="text_14 text_bold">200 sends per month</h6>
+                                </div>
+                                <div class="table_data flex-fill">
+                                    <h6 class="text_14 text_bold">1,000 sends per month</h6>
+                                </div>
+                                <div class="table_data flex-fill">
+                                    <h6 class="text_14 text_bold">Unlimited</h6>
+                                </div>
+                                <div class="table_data flex-fill">
+                                    <h6 class="text_14 text_bold">Unlimited</h6>
+                                </div>
+                                
+                            </div>
+                            <div class="table_row d-flex flex-fill light-border">
+                                <div class="table_data table_data1 d-flex gap-8">
+                                    <div class="info_icon_wrapper d-flex justify-content-center align-items-center">
+                                        <div class="info_icon d-flex justify-content-center align-items-center ">
+                                            <i class="fa-solid fa-info"></i>
+                                        </div>
+                                    </div>
+                                    <h6 class="text_14 text_bold">Bulk email sending</h6>
+                                </div>
+                                <div class="table_data flex-fill">
+                                    <h6 class="text_14 text_bold">10 sends at a time</h6>
+                                </div>
+                                <div class="table_data flex-fill">
+                                    <h6 class="text_14 text_bold">50 sends at a time</h6>
+                                </div>
+                                <div class="table_data flex-fill">
+                                    <h6 class="text_14 text_bold">50 sends at a time</h6>
+                                </div>
+                                <div class="table_data flex-fill">
+                                    <h6 class="text_14 text_bold">50 sends at a time</h6>
+                                </div>
+                                
+                            </div>
+                            <div class="table_row d-flex flex-fill light-border">
+                                <div class="table_data table_data1 d-flex gap-8">
+                                    <div class="info_icon_wrapper d-flex justify-content-center align-items-center">
+                                        <div class="info_icon d-flex justify-content-center align-items-center ">
+                                            <i class="fa-solid fa-info"></i>
+                                        </div>
+                                    </div>
+                                    <h6 class="text_14 text_bold">Number of Seats</h6>
+                                </div>
+                                <div class="table_data flex-fill">
+                                    <h6 class="text_14 text_bold"><i class="fa-solid fa-xmark"></i></h6>
+                                </div>
+                                <div class="table_data flex-fill">
+                                    <h6 class="text_14 text_bold"><i class="fa-solid fa-check"></i></h6>
+                                </div>
+                                <div class="table_data flex-fill">
+                                    <h6 class="text_14 text_bold"><i class="fa-solid fa-check"></i></h6>
+                                </div>
+                                <div class="table_data flex-fill">
+                                    <h6 class="text_14 text_bold"><i class="fa-solid fa-check"></i></h6>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pattern_container position-absolute d-flex justify-content-between">
+                    <div class="rotate-pattern" >
+                        <img src="https://framerusercontent.com/images/wObACbeWO5hfeznCAloUfpkvlYo.svg" alt="">
+                    </div>
+                    <div class="rotate-pattern" >
+                        <img src="https://framerusercontent.com/images/wObACbeWO5hfeznCAloUfpkvlYo.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="background-big-image position-absolute" >
+            <img src="https://framerusercontent.com/images/r6r3yoEjmRyyyPwqyY74q75I.svg" alt="" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-shine" data-aos-delay="0" data-aos-once="true">
+        </div>
+    </section>
 
 <!-- Review section -->
 
@@ -310,7 +1267,7 @@
 
 <!-- Faq section -->
 
-    <section class="about-faq-section about_company_values_section position-relative " >
+    <section class="faq_section about_company_values_section position-relative " >
         <div class="container" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-shine" data-aos-delay="0" data-aos-once="true">
             <div class="wrapper d-flex flex-column align-items-center gap-48 ">
                 <div class="head d-flex justify-content-center">
@@ -322,19 +1279,19 @@
                 </div>
                 <div class="middle tab_container d-flex">
                     <div class="d-flex flex-full position-relative">
-                        <div class="tab active_tab position-relative d-flex gap-6" data-tabname="tab1" >
+                        <div class="faq_tab_controller tab active_tab position-relative d-flex gap-6" data-tabname="tab1" >
                             <div class="icon">
                                 <img src="public/images/stars_icon.svg" alt="">
                             </div>
                             <span class="d-inline-block" >Tab one</span>
                         </div>
-                        <div class="tab position-relative d-flex gap-6" data-tabname="tab2" >
+                        <div class="faq_tab_controller tab position-relative d-flex gap-6" data-tabname="tab2" >
                             <div class="icon">
                                 <img src="public/images/database_icon.svg" alt="">
                             </div>
                             <span class="d-inline-block" >Tab two</span>
                         </div>
-                        <div class="tab back_tab"></div>
+                        <div class="tab faq_tab_controller back_tab"></div>
                     </div>
                 </div>
                 <div class="foot position-relative d-flex">

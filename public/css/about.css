@@ -256,17 +256,17 @@ section {
 
 /* faq section */
 
-.about-faq-section .head-content{
+.faq_section .head-content{
     max-width: none;
 }
 
-.about-faq-section .head-content .description{
+.faq_section .head-content .description{
     font-size: 20px;
     line-height: 40px;
     letter-spacing: -0.33px;
 }
 
-.about-faq-section .foot{
+.faq_section .foot{
     overflow-x: clip;
 }
 
@@ -275,6 +275,7 @@ section {
     background-color: #fff;
     border-radius: 999px;
     box-shadow: rgba(5, 5, 5, 0.04) 0px 8px 32px 0px, rgb(244, 241, 235) 0px 0px 0px 1px;    
+    width: fit-content;
 }
 
 .tab_container .tab{
