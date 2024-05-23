@@ -1,0 +1,104 @@
+main{
+    padding: 128px 24px 96px;
+}
+
+main .left{
+    max-width: 384px;
+    width: 100%;
+    height: auto;
+}
+
+main .right{
+    padding: 80px 64px;
+    max-width: 60%;
+    border-radius: 20px;
+    background: rgb(248, 246, 242);
+}
+
+main .right .about-review-section{
+    padding: 0px;
+    background: rgb(248, 246, 242);
+}
+
+main .right .top .image_wrapper{
+    width: 100%;
+    height: 283px;
+}
+
+.breaker > span{
+    font-size: 12px;
+    color: rgb(140, 142, 146);
+    letter-spacing: 0.01px;
+    line-height: 20px;
+}
+
+.signup_signin_form .input{
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 32px;
+    font-size: 1.4rem;
+    line-height: 19.6px;
+    background: rgb(247, 247, 247);
+    border: none;
+}
+
+.signup_signin_form .input:focus{
+    outline: none;
+}
+
+.signup_signin_form .btn{
+    width: 100%;
+    box-shadow: none;
+    border-width: 1px;
+}
+
+.signup_signin_form .social-icon{
+    width: 24px;
+    height: 24px;
+}
+
+.signup_signin_form .social_icon{
+    width: 24px;
+    height: 24px;
+}
+
+.social_logins .btn{
+    background: rgb(247, 247, 247);
+    border-color: rgb(234, 234, 235);
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.social_logins .btn:hover{
+    background: rgb(234, 234, 235);
+}
+
+.social_logins .btn > span{
+    font-weight: 500;
+}
+
+.form_wrapper .checkbox_icon{
+    width: 24px;
+    height: 24px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.form_wrapper .icon_wrapper{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    border: 1px solid rgb(223, 225, 231);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(250, 99, 23, 0);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.form_wrapper .checkbox_icon.active .icon_wrapper{
+    border: 1px solid rgb(213, 78, 10);
+    background: rgba(250, 99, 23, 1);
+}
+
