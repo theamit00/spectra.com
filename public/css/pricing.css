@@ -1,3 +1,27 @@
+.pricing_container{
+    width: 100%;
+    height: 500px;
+}
+
+.pricing_container .card_container{
+    position: absolute;    
+    top: 0;
+    bottom: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.pricing_tab_in{
+    transform: scale(1);
+    opacity: 1;
+    z-index: 1;
+}
+
+.pricing_tab_out{
+    transform: scale(0);
+    opacity: 0;
+    z-index: 0;
+}
+
 .pricing_container .card{
     background: #fff;
     padding: 24px;
@@ -66,6 +90,31 @@
     padding: 96px 24px;
 }
 
+.spectra_plans_section .pricing_container{
+    height: 182px;
+    overflow: hidden;
+}
+
+.spectra_plans_section .pricing_container .plans_tab{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+}
+
+.spectra_plans_section .pricing_container .plans_tab.plans_tab_in{
+    top: 0px;
+    bottom: 0px;
+    opacity: 1;
+    z-index: 1;
+}
+
+.spectra_plans_section .pricing_container .plans_tab.plans_tab_out{
+    top: 100%;
+    bottom: 0px;
+    opacity: 0;
+    z-index: 0;
+}
+
 .spectra_plans_section .head-content{
     max-width: 480px;
 }
@@ -81,9 +130,9 @@
     border-radius: 6px;
 }
 
-.spectra_plans_section .spectra_plans_tab_controller.back_tab{
-    width: 100%;
-    height: 50%;
+.spectra_plans_section .spectra_plans_tab_controller.active_tab{
+    background: rgb(248, 246, 242);
+    opacity: 1;
 }
 
 .spectra_plans_section .custom_table .table_row{
@@ -102,4 +151,6 @@
     border-top: none;
     border-inline: none;
 }
+
+
 

@@ -76,44 +76,9 @@ detailContents.forEach((detailContent)=>{
     })
 })
 
-// Statements for handling tabs in faq section in about page
 
-function switch_tab(tab, tab1, tab2, currentTabTracker, back_tab){
-    console.log(currentTabTracker)
-    currentTabTracker.currentAnswer.classList.remove('active_tab');
-        tab.classList.add('active_tab');
-        currentTabTracker.currentAnswer = tab;
 
-        if(currentTabTracker.currentAnswer.dataset.tabname === 'tab2'){
-
-            back_tab.style.left = `${currentTabTracker.currentAnswer.getBoundingClientRect().right - currentTabTracker.currentAnswer.getBoundingClientRect().left}px`;
-            // tab1.classList.remove('faq_tab_in');
-            // tab1.classList.add('faq_tab_out');
-
-            // tab2.classList.remove('faq_tab_out');
-            // tab2.classList.add('faq_tab_in');
-        }
-        else{
-
-            back_tab.style.left = "0px";
-            
-            // tab1.classList.remove('faq_tab_out');
-            // tab1.classList.add('faq_tab_in');
-
-            // tab2.classList.remove('faq_tab_in');
-            // tab2.classList.add('faq_tab_out');
-        }
-}
-
-const heroPricingTabControllers = Array.from(document.querySelectorAll('.tab_container .hero_price_tab_controller'));
-const faqTabControllers = Array.from(document.querySelectorAll('.tab_container .faq_tab_controller'));
-
-const faq_tab1 = document.querySelector('#faq_tab1');
-const faq_tab2 = document.querySelector('#faq_tab2');
-const heroPriceBackTab = document.querySelector('.tab_container .hero_price_tab_controller.back_tab');
-const faq_back_tab = document.querySelector('.tab_container .faq_tab_controller.back_tab');
-
-function switch_tab(tab, tab1, tab2, currentTabTracker, back_tab){
+function switch_tab(tab, tab1, tab2, currentTabTracker,back_tab){
     // console.log(currentTabTracker)
     currentTabTracker.currentAnswer.classList.remove('active_tab');
         tab.classList.add('active_tab');
@@ -121,66 +86,93 @@ function switch_tab(tab, tab1, tab2, currentTabTracker, back_tab){
 
         if(currentTabTracker.currentAnswer.dataset.tabname === 'tab2'){
 
-            back_tab.style.left = `${currentTabTracker.currentAnswer.getBoundingClientRect().right - currentTabTracker.currentAnswer.getBoundingClientRect().left}px`;
-            tab1.classList.remove('faq_tab_in');
-            tab1.classList.add('faq_tab_out');
+            if(currentTabTracker.currentAnswer.classList.contains('hero_price_tab_controller')){
+                if(back_tab){
+                    back_tab.style.left = `${currentTabTracker.currentAnswer.getBoundingClientRect().right - currentTabTracker.currentAnswer.getBoundingClientRect().left}px`;
+                }
+                tab1.classList.remove('pricing_tab_in');
+                tab1.classList.add('pricing_tab_out');
+    
+                tab2.classList.remove('pricing_tab_out');
+                tab2.classList.add('pricing_tab_in');
+            }
 
-            tab2.classList.remove('faq_tab_out');
-            tab2.classList.add('faq_tab_in');
+            if(currentTabTracker.currentAnswer.classList.contains('spectra_plans_tab_controller')){
+                if(back_tab){
+                    back_tab.style.left = `${currentTabTracker.currentAnswer.getBoundingClientRect().right - currentTabTracker.currentAnswer.getBoundingClientRect().left}px`;
+                }
+                tab1.classList.remove('plans_tab_in');
+                tab1.classList.add('plans_tab_out');
+    
+                tab2.classList.remove('plans_tab_out');
+                tab2.classList.add('plans_tab_in');
+            }
+
+            if(currentTabTracker.currentAnswer.classList.contains('faq_tab_controller')){
+                if(back_tab){
+                    back_tab.style.left = `${currentTabTracker.currentAnswer.getBoundingClientRect().right - currentTabTracker.currentAnswer.getBoundingClientRect().left}px`;
+                }
+                tab1.classList.remove('faq_tab_in');
+                tab1.classList.add('faq_tab_out');
+
+                tab2.classList.remove('faq_tab_out');
+                tab2.classList.add('faq_tab_in');
+            }
+
         }
         else{
 
-            back_tab.style.left = "0px";
-            
-            tab1.classList.remove('faq_tab_out');
-            tab1.classList.add('faq_tab_in');
+            if(currentTabTracker.currentAnswer.classList.contains('hero_price_tab_controller')){
+                if(back_tab){
+                    back_tab.style.left = "0px";
+                }
 
-            tab2.classList.remove('faq_tab_in');
-            tab2.classList.add('faq_tab_out');
+                tab1.classList.remove('pricing_tab_out');
+                tab1.classList.add('pricing_tab_in');
+    
+                tab2.classList.remove('pricing_tab_in');
+                tab2.classList.add('pricing_tab_out');
+            }
+
+            if(currentTabTracker.currentAnswer.classList.contains('spectra_plans_tab_controller')){
+                if(back_tab){
+                    back_tab.style.left = `${currentTabTracker.currentAnswer.getBoundingClientRect().right - currentTabTracker.currentAnswer.getBoundingClientRect().left}px`;
+                }
+                tab1.classList.remove('plans_tab_out');
+                tab1.classList.add('plans_tab_in');
+    
+                tab2.classList.remove('plans_tab_in');
+                tab2.classList.add('plans_tab_out');
+            }
+
+            if(currentTabTracker.currentAnswer.classList.contains('faq_tab_controller')){
+                if(back_tab){
+                    back_tab.style.left = "0px";
+                }
+                
+                tab1.classList.remove('faq_tab_out');
+                tab1.classList.add('faq_tab_in');
+    
+                tab2.classList.remove('faq_tab_in');
+                tab2.classList.add('faq_tab_out');
+            }
+
+            
         }
 }
 
-const currentHeroPriceTabControllersTracker = {
-    currentAnswer : heroPricingTabControllers[0],
-}
+
+// Statements for handling tabs in faq section
+const faqTabControllers = Array.from(document.querySelectorAll('.tab_container .faq_tab_controller'));
+
+const faq_tab1 = document.querySelector('#faq_tab1');
+const faq_tab2 = document.querySelector('#faq_tab2');
+
+const faq_back_tab = document.querySelector('.tab_container .faq_tab_controller.back_tab');
+
 const currentFaqTabControllersTracker = {
     currentAnswer : faqTabControllers[0],
 }
-// console.log(currentAnswerTracker)
-// faqTabControllers.forEach((tab)=>{
-//     tab.addEventListener('click',()=>{
-
-//         // currentTabTracker.currentAnswer.classList.remove('active_tab');
-//         // tab.classList.add('active_tab');
-//         // currentTabTracker.currentAnswer = tab;
-
-//         // if(currentTabTracker.currentAnswer.dataset.tabname === 'tab2'){
-
-//         //     back_tab.style.left = `${currentTabTracker.currentAnswer.getBoundingClientRect().right - currentTabTracker.currentAnswer.getBoundingClientRect().left}px`;
-//         //     tab1.classList.remove('faq_tab_in');
-//         //     tab1.classList.add('faq_tab_out');
-
-//         //     tab2.classList.remove('faq_tab_out');
-//         //     tab2.classList.add('faq_tab_in');
-//         // }
-//         // else{
-
-//         //     back_tab.style.left = "0px";
-            
-//         //     tab1.classList.remove('faq_tab_out');
-//         //     tab1.classList.add('faq_tab_in');
-
-//         //     tab2.classList.remove('faq_tab_in');
-//         //     tab2.classList.add('faq_tab_out');
-//         // }
-//     })
-// })
-
-heroPricingTabControllers.forEach((tab)=>{
-    tab.addEventListener('click', ()=>{
-        switch_tab(tab, faq_tab1, faq_tab2, currentHeroPriceTabControllersTracker, heroPriceBackTab)
-    })
-})
 
 faqTabControllers.forEach((tab)=>{
     tab.addEventListener('click', ()=>{
@@ -217,5 +209,42 @@ faqs.forEach((faq)=>{
         
         faqTabTracker.prevFaqTab = faqTabTracker.currentFaqTab;
         return;
+    })
+})
+
+
+// Statements for handling tabs in hero pricing tabs
+
+const heroPricingTabControllers = Array.from(document.querySelectorAll('.tab_container .hero_price_tab_controller'));
+const heroPriceBackTab = document.querySelector('.tab_container .hero_price_tab_controller.back_tab');
+
+const priceTab1 = document.querySelector('#price_tab1');
+const priceTab2 = document.querySelector('#price_tab2');
+
+const currentHeroPriceTabControllersTracker = {
+    currentAnswer : heroPricingTabControllers[0],
+}
+
+heroPricingTabControllers.forEach((tab)=>{
+    tab.addEventListener('click', ()=>{
+        switch_tab(tab, priceTab1, priceTab2, currentHeroPriceTabControllersTracker, heroPriceBackTab)
+    })
+})
+
+
+// Statements for handling tabs in spectra plans tabs
+
+const spectraPlansTabControllers = Array.from(document.querySelectorAll('.tab_container .spectra_plans_tab_controller'));
+
+const plansTab1 = document.querySelector('#plans_tab1');
+const plansTab2 = document.querySelector('#plans_tab2');
+
+const currentSpectraPlansTabControllersTracker = {
+    currentAnswer : spectraPlansTabControllers[0],
+}
+
+spectraPlansTabControllers.forEach((tab)=>{
+    tab.addEventListener('click', ()=>{
+        switch_tab(tab, plansTab1, plansTab2, currentSpectraPlansTabControllersTracker)
     })
 })
