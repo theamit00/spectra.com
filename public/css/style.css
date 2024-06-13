@@ -1608,7 +1608,7 @@ video{
     .navbar-section {
         position: absolute;
         width: 100%;
-        top: 0;
+        top: .8rem;
     }
 
     .full-width{

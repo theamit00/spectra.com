@@ -209,10 +209,10 @@ section {
 
 /* about_team_section */
 
-.about_team_section{
+/* .about_team_section{
     padding: 64px 24px 24px;
     overflow: hidden;
-}
+} */
 
 .about_team_section .head .description p{
     font-size: 20px;
