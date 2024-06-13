@@ -3,11 +3,15 @@
 }
 
 section {
-    padding: 80px 24px;
+    padding: 64px 24px;
 
 }
 
 /* hero section */
+
+.about-hero-section {
+    padding: 144px 24px 64px;
+}
 
 .about-hero-section .play-btn{
     padding: unset;
@@ -34,7 +38,7 @@ section {
 }
 
 .about-review-section .head{
-    width: 280px;
+    width: 100%;
 }
 
 .about-review-section .title h6{
@@ -470,4 +474,29 @@ section {
     .about-hero-section .hero-content-header .rotate-pattern{
         left: 332px;
     }
+}
+
+@media (min-width : 992px){
+
+    section {
+        padding: 80px 24px;
+    }
+
+    .about-hero-section {
+        padding: 196px 24px 80px;
+    }
+
+    /* about review section */
+    .about-review-section .head{
+        width: 280px;
+    }
+
+    .about-review-section .container{
+        gap: 136px !important;
+    }
+    
+}
+
+@media (min-width : 768px) {
+    
 }
