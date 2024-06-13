@@ -78,9 +78,6 @@ section {
 
 /* about content section */
 
-.about_content_section{
-    padding: 80px 24px;
-}
 
 .about_content_section .container{
     max-width: 1008px;
@@ -99,7 +96,7 @@ section {
 
 .about_content_section .user{
     width: max-content;
-    height: 320px;
+    height: min-content;
 }
 
 .about_content_section .avatar{
@@ -127,7 +124,6 @@ section {
 /* about company values section */
 
 .about_company_values_section{
-    padding: 80px 24px;
     overflow: hidden;
 }
 
@@ -174,10 +170,10 @@ section {
     letter-spacing: -0.69px;
 }
 
-.our_culture_section .video-container{
+/* .our_culture_section .video-container{
     height: 384px;
     width: 100%;
-}
+} */
 
 .our_culture_section .subheading{
     font-size: 24px;
@@ -186,7 +182,12 @@ section {
 }
 
 .our_culture_section .left-section .content-wrapper{
-    height: 496px;
+    /* height: 496px; */
+    height: 100%;
+}
+
+.our_culture_section .card-container{
+    gap: 24px !important; 
 }
 
 .our_culture_section .card{
@@ -196,7 +197,7 @@ section {
 }
 
 .our_culture_section .card h1{
-    font-size: 64px;
+    font-size: 52px;
     line-height: 72px;
     letter-spacing: -1.61px;
     color: #050505;
@@ -209,7 +210,7 @@ section {
 /* about_team_section */
 
 .about_team_section{
-    padding: 80px 24px;
+    padding: 64px 24px 24px;
     overflow: hidden;
 }
 
@@ -219,13 +220,10 @@ section {
     letter-spacing: -0.33px;
 }
 
-.about_team_section .card-container{
-    padding-bottom: 40px;
-}
-
 .about_team_section .card{
     background-color: #fff;
     padding: 24px;
+    margin-bottom: 30px;
 }
 
 .about_team_section .card h6{
@@ -323,9 +321,10 @@ section {
 }
 
 .faq_container{
-    width: 520px;
+    max-width: 520px;
     background: #fff;
     transition: all 0.4s ease-in-out;
+    width: 100%;
 }
 
 .faq_container .custom-border{
@@ -442,6 +441,41 @@ section {
     }
 }
 
+@media (min-width : 768px) {
+    
+}
+
+@media (min-width : 992px){
+
+    section {
+        padding: 80px 24px;
+    }
+
+    .about-hero-section {
+        padding: 196px 24px 80px;
+    }
+
+    /* about review section */
+    .about-review-section .head{
+        width: 280px;
+    }
+
+    .about-review-section .container{
+        gap: 136px !important;
+    }
+
+    /* about stats section */
+    .about-stats-section .btn{
+        width: max-content;
+    }
+
+    /* about content section */
+    .about_content_section .user{
+        height: 320px;
+    }
+    
+}
+
 @media (min-width : 1200px) {
 
     .navbar-section {
@@ -474,29 +508,20 @@ section {
     .about-hero-section .hero-content-header .rotate-pattern{
         left: 332px;
     }
-}
 
-@media (min-width : 992px){
-
-    section {
-        padding: 80px 24px;
+    /* about stats section */
+    .about-stats-section .col-xl-4{
+        width: 33.3%;
     }
 
-    .about-hero-section {
-        padding: 196px 24px 80px;
+    /* our culture section */
+    .our_culture_section .card h1{
+        font-size: 64px;
     }
 
-    /* about review section */
-    .about-review-section .head{
-        width: 280px;
+    /* about team section */
+    .about_team_section .col-xl-4{
+        width: 30%;
     }
 
-    .about-review-section .container{
-        gap: 136px !important;
-    }
-    
-}
-
-@media (min-width : 768px) {
-    
 }
