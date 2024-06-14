@@ -288,6 +288,7 @@ section {
     /* background: #fff; */
     transition: all 0.3s ease-in-out;
     z-index: 1;
+    width: max-content;
 }
 
 .tab_container .tab>span{

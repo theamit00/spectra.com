@@ -1493,34 +1493,6 @@ video{
 
 @media (min-width : 992px){
 
-    .heading_18{
-        font-size: 1.8rem;
-        font-weight: 500;
-        line-height: 21.6px;
-        letter-spacing: -0.26px;
-    }
-    
-    .heading_20{
-        font-size: 2rem;
-        font-weight: 500;
-        line-height: 32px;
-        letter-spacing: -0.33px;
-    }
-    
-    .heading_24{
-        font-size: 2.4rem;
-        font-weight: 500;
-        line-height: 32px;
-        letter-spacing: -0.47px;
-    }
-    
-    .heading_32{
-        font-size: 3.2rem;
-        font-weight: 500;
-        letter-spacing: -0.69px;
-        line-height: 40px;
-    }
-    
     .heading_lg_36{
         font-size: 3.6rem;
         font-weight: 500;

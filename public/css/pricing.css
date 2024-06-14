@@ -4,10 +4,12 @@
 }
 
 .pricing_container .card_container{
-    position: absolute;    
+    position: absolute;   
+    width: 100%; 
     top: 0;
     bottom: 0;
     transition: all 0.4s ease-in-out;
+    overflow-x: scroll;
 }
 
 .pricing_tab_in{
@@ -25,7 +27,7 @@
 .pricing_container .card{
     background: #fff;
     padding: 24px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .pricing_container .card.pro_card{
@@ -54,7 +56,7 @@
 /* Glide for Enterprise */
 
 .glide_for_enterprise{
-    padding: 96px 24px;
+    padding: 72px 24px;
 }
 
 .glide_for_enterprise .container{
@@ -62,7 +64,7 @@
 }
 
 .glide_for_enterprise .card{
-    padding: 64px;
+    padding: 48px 24px;
 }
 
 .glide_for_enterprise .card .left{
@@ -117,10 +119,12 @@
 
 .spectra_plans_section .head-content{
     max-width: 480px;
+    width: 100%;
 }
 
 .spectra_plans_section .pattern_container{
-    max-width: 864px
+    max-width: 864px;
+    width: 100%;
 }
 
 .spectra_plans_section .tab_container{
@@ -152,5 +156,26 @@
     border-inline: none;
 }
 
+@media (min-width : 992px) {
+    
+    .glide_for_enterprise .about-review-section .container{
+        gap: 136px !important;
+    }
 
+    .glide_for_enterprise .card{
+        padding: 64px;
+    }
+
+}
+
+@media (min-width : 1200px) {
+
+    .pricing_container .card_container{
+        overflow: hidden;
+    }
+
+    .glide_for_enterprise{
+        padding: 96px 24px;
+    }
+}
 
