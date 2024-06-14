@@ -16,9 +16,8 @@
 
 .blog_hero_section .foot-content .left{
     padding: 40px;
-    border-top: 0px;
-    border-bottom: 0px;
-    border-left: 0px;
+    border-width: 0px;
+    border-bottom-width: 1.2px;
 }
 
 .blog_hero_section .foot-content .right{
@@ -73,7 +72,7 @@
 }
 
 .blog_hero_section .right_container .image_wrapper{
-    height: 212px;
+    height: 100%;
     border-radius: 12px;
 }
 .image_wrapper .image{
@@ -106,6 +105,7 @@
 }
 
 .blogs_container .blog{
+    padding: 16px 16px 32px;
     background: #fff;
     border-top: 0px;
     border-left: 0px;
@@ -114,4 +114,17 @@
 
 .blogs_container .blog .mid{
     max-width: 520px;
+}
+
+@media (min-width: 992px) {
+    
+    .blog_hero_section .foot-content .left{
+        border-width: 0;
+        border-right-width: 1.2px;
+    }
+
+    .blog_hero_section .right_container .image_wrapper{
+        height: 212px;
+    }
+
 }
