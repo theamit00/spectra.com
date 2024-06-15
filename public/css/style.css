@@ -1319,7 +1319,7 @@ video{
 /* Footer Section */
 
 .footer-section{
-    padding: 112px 24px 64px;
+    padding: 72px 24px 64px;
 }
 
 .footer-section .head .left{
@@ -1558,6 +1558,10 @@ video{
         line-height: 48px;
         letter-spacing: -0.89px;
         text-align: center;
+    }
+
+    .footer-section{
+        padding: 112px 24px 64px;
     }
 
 }

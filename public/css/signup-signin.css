@@ -1,28 +1,38 @@
-main{
-    padding: 128px 24px 96px;
+.sign_up_main{
+    padding: 144px 24px 72px
 }
 
-main .left{
+.sign_up_main .container{
+    gap: 56px;
+}
+
+.sign_up_main .left{
     max-width: 384px;
     width: 100%;
     height: auto;
 }
 
-main .right{
-    padding: 80px 64px;
-    max-width: 60%;
+.sign_up_main .right{
+    padding: 32px;
+    max-width: unset;
     border-radius: 20px;
+    width: 100%;
     background: rgb(248, 246, 242);
 }
 
-main .right .about-review-section{
+.sign_up_main .right .about-review-section{
     padding: 0px;
     background: rgb(248, 246, 242);
 }
 
-main .right .top .image_wrapper{
+.sign_up_main .right .about-review-section .container{
+    gap: 24px !important;
+}
+
+.sign_up_main .right .top .image_wrapper{
     width: 100%;
-    height: 283px;
+    max-height: 283px;
+    height: 100%;
 }
 
 .breaker > span{
@@ -100,5 +110,29 @@ main .right .top .image_wrapper{
 .form_wrapper .checkbox_icon.active .icon_wrapper{
     border: 1px solid rgb(213, 78, 10);
     background: rgba(250, 99, 23, 1);
+}
+
+@media (min-width:992px) {
+
+    .sign_up_main{
+        padding: 144px 24px 80px
+    }
+
+    .sign_up_main .right{
+        padding: 56px;
+        max-width: 75%;
+    }
+}
+
+@media (min-width:1200px) {
+
+    .sign_up_main{
+        padding: 144px 24px 72px
+    }
+
+    .sign_up_main .right{
+        padding: 80px 64px;
+        max-width: 60%;
+    }
 }
 
